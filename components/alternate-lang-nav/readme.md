@@ -1,3 +1,5 @@
+<!-- @license CC0-1.0 -->
+
 # Alternate language navigation
 
 Note: code examples are stripped to the essence, and the examples of "Good" are not complete. Read the component page for a comprehensive example of best practices.
@@ -10,7 +12,7 @@ Bad:
 
 ```html
 <h1>Government website</h1>
-<a href="/en/">English</a><br/>
+<a href="/en/">English</a><br />
 <a href="/nl/">Nederlands</a>
 ```
 
@@ -18,13 +20,13 @@ Good:
 
 ```html
 <h1>Government website</h1>
-<a href="/en/" aria-current="true">English</a><br/>
+<a href="/en/" aria-current="true">English</a><br />
 <a href="/nl/">Nederlands</a>
 ```
 
 The result is that screen readers say things like:
 
-- VoiceOver on macOS 12.1: "Current page, link, English"
+-   VoiceOver on macOS 12.1: "Current page, link, English" ... "Link, Nederlands"
 
 ## Goal: Users that don't understand the language of the current page, can identify the link that brings them to an alternate page in a language they know.
 
@@ -35,7 +37,6 @@ Bad:
 ```html
 <a href="/en/">EN</a> | <a href="/en/">NL</a>
 ```
-
 
 The result is that screen readers will pronounce the name with a voice that can pronounce the target language, instead of an incomprehensible attempt to pronounce a foreign word in the current language.
 
@@ -52,11 +53,11 @@ even when there is an abbreviation in the text content.
 Good:
 
 ```html
-<a href="/en/" lang="en">English</a><br/>
+<a href="/en/" lang="en">English</a><br />
 <a href="/nl/" lang="nl">Nederlands</a>
 ```
 
 ```html
-<a href="/en/" lang="en" aria-label="English">EN</a><br/>
+<a href="/en/" lang="en" aria-label="English">EN</a><br />
 <a href="/nl/" lang="nl" aria-label="Nederlands">NL</a>
 ```
