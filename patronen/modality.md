@@ -1,6 +1,6 @@
 ---
 name: Modality
-menu: Ux patterns
+menu: UX patterns
 ---
 
 # Modality
