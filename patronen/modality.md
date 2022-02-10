@@ -24,7 +24,17 @@ There are two types of modal views:
 - Make it clear to the user what task is being performed in the modal view.
 - Allow users to always close a modal screen with a close action. The best position for the close action is at the top-right corner of the screen.
 - In case of a multi-step task, the subsequent steps are stay in the current screen and won’t open an additional modal view. A user must be able to go back to previous steps in their task.
-- in case of a full-sceen modal view, it is recommended to diable the `ESC` key action used in modal dialogs; accidentally hitting the `ESC` key will result in a user being taken out of their current task and likely be confusing. 
+- in case of a full-sceen modal view, it is recommended to diable the `ESC` key action used in modal dialogs; accidentally hitting the `ESC` key will result in a user being taken out of their current task and likely be confusing.
+
+## Examples
+
+![Gov.uk example of a non-modal screen](https://user-images.githubusercontent.com/248921/153424976-9bedc053-124a-4863-b2ee-4e5f2b4f9238.png)
+
+![Gov.uk example of a full-screen modal screen](https://user-images.githubusercontent.com/248921/153425377-f5f9fb6c-0d13-4e72-a43e-e09c6d7c845d.png)
+
+
+Gov.uk example of a flow originating in a [non-modal screen](https://www.gov.uk/personal-tax-account/sign-in/prove-identity) (top), and [opening a task in a full-screen modal view](https://www.access.service.gov.uk/login/signin/creds) (bottom)
+
 
 ## References
 - [Modality Is the One UX Concept That Most Designers Don’t Fully Understand](https://uxplanet.org/modality-the-one-ux-concept-you-need-to-understand-when-designing-intuitive-user-interfaces-e5e941c7acb1)
