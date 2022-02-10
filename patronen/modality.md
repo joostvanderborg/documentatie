@@ -11,7 +11,7 @@ Example from Den Haag showing a full-screen modal view
 
 ## Description
 
-In order to let users accomplish on a task at hand it is sometimes needed to provide extra focus. Especially when there is limited screen estate, such as on mobile devices. One way to add focus is by displaying the relevant task in a modal view.
+In order to let users accomplish a task at hand and not overwhelm them with lots of information it is sometimes needed to provide extra focus. Especially when there is limited screen estate, such as on mobile devices. One way to add focus is by displaying the relevant task in a modal view.
 
 There are two types of modal views:
 
@@ -24,7 +24,9 @@ There are two types of modal views:
 - Make it clear to the user what task is being performed in the modal view.
 - Allow users to always close a modal screen with a close action. The best position for the close action is at the top-right corner of the screen.
 - In case of a multi-step task, the subsequent steps are stay in the current screen and won’t open an additional modal view. A user must be able to go back to previous steps in their task.
-- in case of a full-sceen modal view, it is recommended to diable the `ESC` key action used in modal dialogs; accidentally hitting the `ESC` key will result in a user being taken out of their current task and likely be confusing.
+- In a multi-step task, give users a sense of progress. Let them know how far there are in their task and how much time or effort it might take.
+- Make sure that users have all information needed available in the modal view, without the need to go back to the underlying interface.
+- In case of a full-sceen modal view, it is recommended to diable the `ESC` key action used in modal dialogs; accidentally hitting the `ESC` key will result in a user being taken out of their current task and likely be confusing.
 - The browser’s back button should provide users with a way to browse throught the screen in the modal view (after subsequent pages in the modal view) and not let the user return to the (non-modal) main screen.
 
 ## Examples
@@ -37,6 +39,8 @@ There are two types of modal views:
 Gov.uk example of a flow originating in a [non-modal screen](https://www.gov.uk/personal-tax-account/sign-in/prove-identity) (top), and [opening a task in a full-screen modal view](https://www.access.service.gov.uk/login/signin/creds) (bottom). On the first screen the top header with its main navigation and the extended footer are still visible. After starting the task these disappear to allow focus on the task.
 
 ## References
+
+- [Modal & Nonmodal Dialogs: When (& When Not) to Use Them](https://www.nngroup.com/articles/modal-nonmodal-dialog/)
 - [Modality Is the One UX Concept That Most Designers Don’t Fully Understand](https://uxplanet.org/modality-the-one-ux-concept-you-need-to-understand-when-designing-intuitive-user-interfaces-e5e941c7acb1)
 - [Material Design - Dialogs](https://material.io/components/dialogs#usage)
 - [Apple Human Interface guidelines - Modality](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/)
