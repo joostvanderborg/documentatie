@@ -29,4 +29,4 @@ There are two types of modal views:
 ## References
 - [Modality Is the One UX Concept That Most Designers Don’t Fully Understand](https://uxplanet.org/modality-the-one-ux-concept-you-need-to-understand-when-designing-intuitive-user-interfaces-e5e941c7acb1)
 - [Material Design - Dialogs](https://material.io/components/dialogs#usage)
-- [Apple Human Interface guidelines - Modality](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/0
+- [Apple Human Interface guidelines - Modality](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/)
