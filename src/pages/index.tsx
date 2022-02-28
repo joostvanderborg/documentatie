@@ -48,7 +48,7 @@ export default function Home() {
       </HomepageHero>
       <main>
         <HomepageActions>
-          <HomepageAction title="Documentie" href="docs/algemeen/">
+          <HomepageAction title="Documentatie" href="docs/algemeen/">
             <p>Introductietekst over documentatie</p>
           </HomepageAction>
           <HomepageAction title="Patronen" href="docs/patronen/">
