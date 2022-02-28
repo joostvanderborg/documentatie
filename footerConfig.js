@@ -4,7 +4,7 @@ module.exports = {
     {
       items: [
         {
-          label: "Privacyverklaring",
+          label: "Privacy verklaring",
           to: "/docs/footer/privacy",
         },
         {
@@ -21,7 +21,7 @@ module.exports = {
       items: [
         {
           label: "GitHub",
-          href: "https://github.com/nl-design-system",
+          href: "https://github.com/nl-design-system/backlog",
         },
         {
           label: "Storybook",
