@@ -85,7 +85,23 @@ export default function Home() {
           </HomepageAction>
         </HomepageActions>
         <MegaFooter>
-          <h2>Over Gebruiker Centraal</h2>
+          <div>
+            <h2>Over het NL Design System kernteam</h2>
+            <p>Het kernteam bestaat uit projectleider Angela Imhof, lead developer Robbert Broersma, front-end developer Yolijn van der Kolk en designer Rogier Barendregt.</p>
+            <ul>
+              <li><a href="#">Meer over het kernteam</a>.</li>
+              <li><a href="#">Meer over Gebruiker Centraal</a>.</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Samenwerking</h2>
+            <p>Het kernteam van het NL Design System werkt onder andere samen met de volgende organisaties:</p>
+            <ul>
+              <li>Gemeente Utrecht</li>
+              <li>Gemeente Den Haag</li>
+              <li>Logius</li>
+            </ul>
+          </div>
         </MegaFooter>
       </main>
     </Layout>

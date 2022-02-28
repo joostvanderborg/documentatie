@@ -1,7 +1,27 @@
 .mega-footer {
-    background-color: red;
+    background-color: #004152;
+    color: white;
+    padding: 32px;
 }
 
 .mega-footer h2 {
     font-size: 18px;
+}
+
+.mega-footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+@media (min-width: 996px) {
+    
+    .mega-footer > div {
+        display: flex;
+    }
+
+    .mega-footer div {
+        flex-basis: 50%;
+        gap: 32px;
+    }
+    
 }
