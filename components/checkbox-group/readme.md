@@ -3,7 +3,7 @@ name: Checkbox
 menu: Components
 ---
 
-# Checkbox
+# Checkbox group
 
 ## Goal: the screen reader not announce a checkbox label without the necessary context
 

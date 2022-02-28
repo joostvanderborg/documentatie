@@ -44,15 +44,13 @@ Since `<label>` doesn't work for custom form inputs, (TODO: double check this) y
 
 Note: `required="false"` does **not** work, the `required` attribute must be absent for optional form fields.
 
-Alternatively `aria-required="true"` is just as effective, but it might get you in trouble with "First rule of ARIA" folks.
+Alternatively `aria-required="true"` on HTML form elements is just as effective, but it might get you in trouble with "First rule of ARIA" folks.
 
 ### Solution: `aria-required="true"` on custom form inputs with `role="checkbox"` et cetera
 
 <!-- id: bb7809cf-0ccc-44e1-b5dd-0bed68460f20 -->
 
 ## Goal: screen reader users get one (and not more than one) notification that a form field is required
-
-Scre
 
 ### Solution
 

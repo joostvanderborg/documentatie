@@ -11,6 +11,8 @@ menu: Components
 
 ## Solution: provide an additional label using the `<legend>` in `<fieldset>`
 
+TODO: also consider `section-...` for the `autocomplete` attribute in these cases.
+
 <!--
 id: 29d36c22-32ad-4f25-be52-370221639132
 wcag: 1.3.5

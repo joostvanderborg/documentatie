@@ -41,17 +41,11 @@ Support the following keys:
 
 Pressing `Arrow Up` and `Arrow Left` should select the previous item. <!-- id: 527fe431-74f9-4ccb-9fd6-f2dc5570efda -->
 
-TODO: Figure out which one makes most sense.
-
--   Pressing `Arrow Up` and `Arrow Left` should do nothing when the first item has been reached. <!-- id: 3983e8ea-97e2-4833-877a-64a7db08fd96 -->
--   Pressing `Arrow Up` and `Arrow Left` should move to the last item when the current item is the first item. <!-- id: 9f67be09-46a7-43ee-8340-95540c5416e1 -->
+Pressing `Arrow Up` and `Arrow Left` should move to the last item when the current item is the first item. <!-- id: 9f67be09-46a7-43ee-8340-95540c5416e1 -->
 
 Pressing `Arrow Down` and `Arrow Right` should select the next item. <!-- id: dc59a406-d9f1-4dd6-89d8-ae5c8f8ba06c -->
 
-TODO: Figure out which one makes most sense.
-
--   Pressing `Arrow Down` and `Arrow Right` should do nothing when the last item has been reached. <!-- id: b321b6ca-3e30-4179-8428-dbe4071ff71a -->
--   Pressing `Arrow Down` and `Arrow Right` should move to the first item when the current item is the last item. <!-- id: 56ad5ca7-85f2-4c38-be15-55c932569b02 -->
+Pressing `Arrow Down` and `Arrow Right` should move to the first item when the current item is the last item. <!-- id: 56ad5ca7-85f2-4c38-be15-55c932569b02 -->
 
 Pressing `Home` should select the first item. <!-- id: 5cb81416-39c6-4d02-8119-07130acf50a0 -->
 
