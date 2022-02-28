@@ -6,6 +6,7 @@ import {
   HomepageAction,
   HomepageActions,
 } from "@site/src/components/HomepageActions";
+import { MegaFooter } from "@site/src/components/MegaFooter";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -83,6 +84,9 @@ export default function Home() {
             </>
           </HomepageAction>
         </HomepageActions>
+        <MegaFooter>
+          <h2>Over Gebruiker Centraal</h2>
+        </MegaFooter>
       </main>
     </Layout>
   );
