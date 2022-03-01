@@ -29,11 +29,8 @@ export default function Home() {
               zijn consistent ontworpen diensten en websites nodig.
             </p>
             <p>
-              De Agenda Digitale Overheid stelt dat overheidsdienstverlening
-              toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor
-              zijn consistent ontworpen diensten en websites nodig. En daarom
-              gaan we tussen overheidsorganisaties principes, interactiepatronen
-              en code delen via een gezamenlijk design system. Dit NL Design
+              Daarom delen we tussen overheidsorganisaties principes, interactiepatronen
+              en code via een gezamenlijk design system. Dit NL Design
               System draagt niet alleen bij aan gebruiksvriendelijkere diensten
               van een betere kwaliteit en toegankelijkheid. Het helpt ook dubbel
               werk te voorkomen.
