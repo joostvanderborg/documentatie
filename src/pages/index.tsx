@@ -41,16 +41,16 @@ export default function Home() {
       <main>
         <HomepageActions>
           <HomepageAction title="Documentatie" href="docs/algemeen/">
-            <p>Introductietekst over documentatie</p>
+            <p>Hier vind je richtlijnen o.a. over taalgebruik, toegankelijkheid en inclusie.</p>
           </HomepageAction>
           <HomepageAction title="Patronen" href="docs/patronen/">
-            <p>Introductietekst over patronen</p>
+            <p>Oplossingen voor veelvoorkomende problemen.</p>
           </HomepageAction>
           <HomepageAction title="Componenten" href="docs/componenten/">
-            <p>Introductietekst over componenten</p>
+            <p>Kant en klare, geteste componenten om digitale producten mee te maken.</p>
           </HomepageAction>
           <HomepageAction title="Voorbeelden" href="docs/voorbeelden/">
-            <p>Introductietekst over voorbeelden</p>
+            <p>Voorbeelden van implementatie.</p>
           </HomepageAction>
         </HomepageActions>
         <HomepageTeasers>
