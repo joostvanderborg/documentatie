@@ -38,11 +38,6 @@ export default function Home() {
               van een betere kwaliteit en toegankelijkheid. Het helpt ook dubbel
               werk te voorkomen.
             </p>
-            <p>
-              Het kernteam bestaat uit projectleider Angela Imhof, lead
-              developer Robbert Broersma, front-end developer Yolijn van der
-              Kolk en designer Rogier Barendregt.
-            </p>
           </>
         }
       </HomepageHero>
@@ -82,7 +77,7 @@ export default function Home() {
               nieuwsbrief
             </p>
             <p> Ook komen hier contact mogelijkheden.</p>
-            <p> Ook dit blok wort qua stijl anders dan de blokken hierboven.</p>
+            <p> Ook dit blok wordt qua stijl anders dan de blokken hierboven.</p>
           </HomepageTeaser>
         </HomepageTeasers>
         <HomepageFooter>
@@ -108,6 +103,11 @@ export default function Home() {
               Het kernteam van het NL Design System werkt onder andere samen met
               de volgende organisaties:
             </p>
+            <ul>
+              <li>Gemeente Den Haag</li>
+              <li>Gemeente Utrecht</li>
+              <li>Logius</li>
+            </ul>
           </div>
         </HomepageFooter>
       </main>

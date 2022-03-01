@@ -23,3 +23,8 @@
   color: #c42c76;
   text-decoration: underline;
 }
+
+.homepage-teaser_src-components-HomepageTeaser-module {
+  background-color: #027bb0; /* Contrast ratio to white foreground color passes with 4.7:1 */
+  color: white;
+}
