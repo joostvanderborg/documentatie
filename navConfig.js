@@ -19,7 +19,7 @@ module.exports = {
     },
     {
       type: "doc",
-      docId: "algemeen/README",
+      docId: "documentatie/README",
       position: "left",
       label: "Documentatie",
     },
