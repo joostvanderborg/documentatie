@@ -14,9 +14,9 @@ keywords:
 
 # Je kunt op meerdere manieren meedoen
 
-- [als product owner](01-als-product-owner/README.md)
-- [als designer](02-als-designer/README.md)
-- [als developer](03-als-developer/README.md)
-- [als copywriter](04-als-copywriter/README.md)
+- [Meedoen als product owner](01-als-product-owner/README.md)
+- [Meedoen als designer](02-als-designer/README.md)
+- [Meedoen als developer](03-als-developer/README.md)
+- [Meedoen als copywriter](04-als-copywriter/README.md)
 
 <!-- DEZE PAGINA ALS MDX MET MOOI DESIGN? -->
