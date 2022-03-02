@@ -193,3 +193,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .avatar-coreteam { /* Avatar images of coreteam members on Over/Kernteam page */
 	width: 25%;
 }
+
+.mega-footer-link {
+    color: white;
+    text-decoration: underline;
+}

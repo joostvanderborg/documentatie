@@ -8,11 +8,6 @@
     font-size: 18px;
 }
 
-.mega-footer a {
-    color: white;
-    text-decoration: underline;
-}
-
 @media (min-width: 996px) {
     
     .mega-footer > div {

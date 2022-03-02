@@ -82,19 +82,16 @@ export default function Home() {
               Kolk en designer Rogier Barendregt.
             </p>
             <p>
-              <Link to="docs/over">Meer over het kernteam.</Link>
+              <Link class="mega-footer-link" to="docs/over">Meer over het kernteam</Link>.
             </p>
             <p>
-              <Link to="https://gebruikercentraal.nl">
-                Meer over Gebruiker Centraal.
-              </Link>
+              <Link class="mega-footer-link" to="https://gebruikercentraal.nl">Meer over Gebruiker Centraal</Link>.
             </p>
           </div>
           <div>
             <h2>Samenwerking</h2>
             <p>
-              Het kernteam van het NL Design System werkt onder andere samen met
-              de volgende organisaties:
+              Het kernteam van het NL Design System werkt onder andere samen met de volgende organisaties:
             </p>
             <ul>
               <li>Gemeente Den Haag</li>
