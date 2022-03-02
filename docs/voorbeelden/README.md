@@ -13,6 +13,6 @@ keywords:
 
 # Voorbeeld applicaties
 
-gemaakt met NLDS richtlijnen en componenten
+Voorbeelden gemaakt met richtlijnen en componenten uit het NL Design System
 
 <!-- Overzichtspagina met linkjes naar voorbeeld applicaties van NLDS -->

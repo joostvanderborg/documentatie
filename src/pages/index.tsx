@@ -18,7 +18,7 @@ export default function Home() {
     >
       <HomepageHero
         title="Over het NL Design System"
-        ctaLink="docs/algemeen/"
+        ctaLink="docs/over/"
         cta="Meer over het NL Design System"
       >
         {
@@ -40,17 +40,17 @@ export default function Home() {
       </HomepageHero>
       <main>
         <HomepageActions>
-          <HomepageAction title="Documentatie" href="docs/algemeen/">
-            <p>Hier vind je richtlijnen o.a. over taalgebruik, toegankelijkheid en inclusie.</p>
+          <HomepageAction title="Documentatie" href="docs/documentatie/">
+            <p>Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie.</p>
           </HomepageAction>
           <HomepageAction title="Patronen" href="docs/patronen/">
-            <p>Oplossingen voor veelvoorkomende problemen.</p>
+            <p>Oplossingen voor veelvoorkomende problemen en herhalende klantreizen.</p>
           </HomepageAction>
           <HomepageAction title="Componenten" href="docs/componenten/">
             <p>Kant en klare, geteste componenten om digitale producten mee te maken.</p>
           </HomepageAction>
           <HomepageAction title="Voorbeelden" href="docs/voorbeelden/">
-            <p>Voorbeelden van implementatie.</p>
+            <p>Voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System.</p>
           </HomepageAction>
         </HomepageActions>
         <HomepageTeasers>
