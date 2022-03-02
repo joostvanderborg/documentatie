@@ -86,7 +86,7 @@ export default function Home() {
               Kolk en designer Rogier Barendregt.
             </p>
             <p>
-              <Link to="docs/algemeen">Meer over het kernteam.</Link>
+              <Link to="docs/over">Meer over het kernteam.</Link>
             </p>
             <p>
               <Link to="https://gebruikercentraal.nl">
