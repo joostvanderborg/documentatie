@@ -189,3 +189,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 .markdown h1:first-child {
   --ifm-h1-font-size: 1.5rem;
 }
+
+.avatar-coreteam { /* Avatar images of coreteam members on Over/Kernteam page */
+	width: 25%;
+}
