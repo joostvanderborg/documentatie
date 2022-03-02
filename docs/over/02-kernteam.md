@@ -12,3 +12,5 @@ keywords:
 ---
 
 # Het kernteam
+
+Het kernteam bestaat uit projectleider Angela Imhof, lead developer Robbert Broersma, front-end developer Yolijn van der Kolk en designer Rogier Barendregt.

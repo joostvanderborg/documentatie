@@ -10,4 +10,7 @@ keywords:
   - nl design system
 ---
 
-# Contact
+# Neem contact met ons op
+
+- Email het kernteam: [nldesignsystem@ictu.nl](mailto:nldesignsystem@ictu.nl)
+- Vind ons en de community op Slack: [#nl-design-system kanaal](https://praatmee.codefor.nl)
