@@ -16,5 +16,5 @@ keywords:
 
 # Gedocumenteerde patronen
 
-- [formulier patronen](03-formulieren/README.md)
-- [digid patroon](02-digid.md)
+- [Formulier patronen](03-formulieren/README.md)
+- [DigiD patroon](02-digid.md)
