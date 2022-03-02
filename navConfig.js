@@ -13,6 +13,12 @@ module.exports = {
     },
     {
       type: "doc",
+      docId: "over/README",
+      position: "left",
+      label: "Over",
+    },
+    {
+      type: "doc",
       docId: "algemeen/README",
       position: "left",
       label: "Documentatie",
