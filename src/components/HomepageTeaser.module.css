@@ -20,6 +20,11 @@
 }
 
 .homepage-teaser__link:hover .homepage-teaser__title {
-  color: #c42c76;
+  color: white;
   text-decoration: underline;
+}
+
+.homepage-teaser p a {
+	color: white;
+	text-decoration: underline;
 }

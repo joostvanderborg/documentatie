@@ -60,8 +60,7 @@ export default function Home() {
             ctaLink="docs/meedoen/"
           >
             <p>
-              Hier komt een stukje tekst en een visual ter ondersteuning. Deze
-              blokken worden anders qua stijl dan de blokken hierboven.
+              Wil je meedoen aan het NL Design System? Dat kan op diverse manieren! <a href="docs/meedoen/">Kijk op onze speciale pagina hoe je mee kunt doen</a>.
             </p>
           </HomepageTeaser>
           <HomepageTeaser
@@ -70,11 +69,8 @@ export default function Home() {
             ctaLink="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/"
           >
             <p>
-              Hier komt een call-to-action voor het inschrijven van de
-              nieuwsbrief
+              Wil je op de hoogte blijven van ontwikkelingen omtrent het NL Design System? Schrijf je dan in voor onze nieuwsbrief en <a href="https://designsystem.gebruikercentraal.nl/blogs-nieuws/">kijk op ons blog</a>!
             </p>
-            <p> Ook komen hier contact mogelijkheden.</p>
-            <p> Ook dit blok wordt qua stijl anders dan de blokken hierboven.</p>
           </HomepageTeaser>
         </HomepageTeasers>
         <HomepageFooter>
