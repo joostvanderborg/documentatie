@@ -203,7 +203,7 @@ p a, li a {
 	text-decoration: underline; /* Add underline to links in running paragraph text and lists */
 }
 
-[class^="homepage-hero__description"] p a {
+[class^="homepage-hero__description"] p a { /* Dirty hack to target link in hero banner text */
 	color: white;
     text-decoration: underline;
 }
