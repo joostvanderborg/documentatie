@@ -22,7 +22,7 @@
   justify-content: center;
 }
 
-.homepage-hero__description_src-components-HomepageHero-module a {
+[class^="homepage-hero__description"] p a {
 	color: white;
     text-decoration: underline;
 }
