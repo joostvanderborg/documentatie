@@ -195,8 +195,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 .mega-footer-link, .homepage-hero__description_src-components-HomepageHero-module a { /* Add white foreground color and underline to links in hero and footer */
-    color: white !important;
-    text-decoration: underline !important;
+    color: white;
+    text-decoration: underline;
 }
 
 p a {
