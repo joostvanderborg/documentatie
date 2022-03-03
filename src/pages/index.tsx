@@ -24,17 +24,11 @@ export default function Home() {
         {
           <>
             <p>
-              De Agenda Digitale Overheid stelt dat overheidsdienstverlening
-              toegankelijk en begrijpelijk moet zijn voor iedereen. Hiervoor
-              zijn consistent ontworpen diensten en websites nodig.
+              De dienstverlening vanuit de overheid moet voor iedereen toegankelijk én begrijpelijk zijn, zo stelt de Agenda Digitale Overheid. Hiervoor is het nodig dat de diensten en websites vanuit de overheid consistent ontworpen zijn. Met het NL Design System verzamelen we beschrijvingen van principes, handvatten, elementen, patronen en richtlijnen. Hiermee willen we stimuleren dat alle overheidspartijen en leveranciers gebruik gaan maken van het NL Design System.
             </p>
             <p>
-              Daarom delen we tussen overheidsorganisaties principes, interactiepatronen
-              en code via een gezamenlijk design system. Dit NL Design
-              System draagt niet alleen bij aan gebruiksvriendelijkere diensten
-              van een betere kwaliteit en toegankelijkheid. Het helpt ook dubbel
-              werk te voorkomen.
-            </p>
+             Het kernteam van het NL Design System houdt de community actief en presenteert om de week de voortgang tijdens de <a href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">Heartbeat-sessie</a>. Ons doel: samenwerken aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening voor overheidsorganisaties.
+			</p>
           </>
         }
       </HomepageHero>
@@ -60,7 +54,7 @@ export default function Home() {
             ctaLink="docs/meedoen/"
           >
             <p>
-              Wil je meedoen aan het NL Design System? Dat kan op diverse manieren! <a href="docs/meedoen/">Kijk op onze speciale pagina hoe je mee kunt doen</a>.
+              Ben je benieuwd hoe jij kunt bijdragen aan het NL Design System? Dit kan namelijk op vele manieren! <a href="docs/meedoen/">Lees hier hoe je meedoet</a>.
             </p>
           </HomepageTeaser>
           <HomepageTeaser
@@ -69,7 +63,7 @@ export default function Home() {
             ctaLink="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/"
           >
             <p>
-              Wil je op de hoogte blijven van ontwikkelingen omtrent het NL Design System? Schrijf je dan in voor onze nieuwsbrief en <a href="https://designsystem.gebruikercentraal.nl/blogs-nieuws/">kijk op ons blog</a>!
+              Wil jij niets missen over de ontwikkelingen van het NL Design System? <a href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">Schrijf je dan in voor onze nieuwsbrief</a> of <a href="https://designsystem.gebruikercentraal.nl/blogs-nieuws/">neem een kijkje op onze blogpagina</a>.
             </p>
           </HomepageTeaser>
         </HomepageTeasers>
