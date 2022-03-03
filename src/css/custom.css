@@ -202,3 +202,8 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 p a, li a {
 	text-decoration: underline; /* Add underline to links in running paragraph text and lists */
 }
+
+[class^="homepage-hero__description"] p a {
+	color: white;
+    text-decoration: underline;
+}

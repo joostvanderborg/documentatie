@@ -21,8 +21,3 @@
   align-items: center;
   justify-content: center;
 }
-
-[class^="homepage-hero__description"] p a {
-	color: white;
-    text-decoration: underline;
-}
