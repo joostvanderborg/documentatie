@@ -199,6 +199,6 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
     text-decoration: underline;
 }
 
-p a {
-	text-decoration: underline; /* Add underline to links in running paragraph text */
+p a, li a {
+	text-decoration: underline; /* Add underline to links in running paragraph text and lists */
 }
