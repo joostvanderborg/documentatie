@@ -1,11 +1,11 @@
 ---
-title: Patronen - index
+title: Patronen - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Overzicht
 sidebar_position: 1
-pagination_label: Index
-description: Patronen - index
+pagination_label: Overzicht
+description: Patronen - Overzicht
 keywords:
   - index
   - patronen

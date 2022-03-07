@@ -1,10 +1,10 @@
 ---
-title: Meedoen als copywriter - index
+title: Meedoen als copywriter - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Overzicht
 sidebar_position: 1
-pagination_label: Index
+pagination_label: Overzicht
 description: Index van resources voor copywriters
 keywords:
   - copywriter

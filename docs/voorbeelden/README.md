@@ -1,11 +1,11 @@
 ---
-title: Voorbeeld applicaties - index
+title: Voorbeeld applicaties - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Overzicht
 sidebar_position: 1
 pagination_label: Index
-description: Voorbeeld applicaties - index
+description: Voorbeeld applicaties - Overzicht
 keywords:
   - index
   - voorbeelden

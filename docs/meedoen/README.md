@@ -1,10 +1,10 @@
 ---
-title: Manieren om mee te doen - index
+title: Manieren om mee te doen - Overzicht
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Index
+sidebar_label: Overzicht
 sidebar_position: 1
-pagination_label: Index
+pagination_label: Overzicht
 description: Een overzicht hoe je mee kan doen vanuit jouw vakgebied
 keywords:
   - meedoen
