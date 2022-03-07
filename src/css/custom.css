@@ -211,3 +211,7 @@ p a, li a {
 .theme-edit-this-page {
 	display: none; /* Temporarily disable Edit this page link since not every page can be editted by the community */
 }
+
+.pagination-nav {
+	display: none; /* Temporarily disabled pagination */
+}
