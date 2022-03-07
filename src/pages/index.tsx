@@ -24,11 +24,8 @@ export default function Home() {
         {
           <>
             <p>
-              De dienstverlening vanuit de overheid moet voor iedereen toegankelijk én begrijpelijk zijn, zo stelt de Agenda Digitale Overheid. Hiervoor is het nodig dat de diensten en websites vanuit de overheid consistent ontworpen zijn. Met het NL Design System verzamelen we beschrijvingen van principes, handvatten, elementen, patronen en richtlijnen. Hiermee willen we stimuleren dat alle overheidspartijen en leveranciers gebruik gaan maken van het NL Design System.
+              In het NL Design System verzamelen we principes, handvatten, elementen, patronen en richtlijnen. Zo kan de hele overheid in Nederland samenwerken aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening.
             </p>
-            <p>
-             Het kernteam van het NL Design System houdt de community actief en presenteert om de week de voortgang tijdens de <a href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">Heartbeat-sessie</a>. Ons doel: samenwerken aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening voor overheidsorganisaties.
-			</p>
           </>
         }
       </HomepageHero>
@@ -54,7 +51,7 @@ export default function Home() {
             ctaLink="docs/meedoen/"
           >
             <p>
-              Ben je benieuwd hoe jij kunt bijdragen aan het NL Design System? Dit kan namelijk op vele manieren! <a href="docs/meedoen/">Lees hier hoe je meedoet</a>.
+              Ben je benieuwd hoe jij kunt bijdragen aan het NL Design System? Dit kan namelijk op vele manieren!
             </p>
           </HomepageTeaser>
           <HomepageTeaser
@@ -63,35 +60,27 @@ export default function Home() {
             ctaLink="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/"
           >
             <p>
-              Wil jij niets missen over de ontwikkelingen van het NL Design System? <a href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">Schrijf je dan in voor onze nieuwsbrief</a> of <a href="https://designsystem.gebruikercentraal.nl/blogs-nieuws/">neem een kijkje op onze blogpagina</a>.
+              Wil jij niets missen over de ontwikkelingen van het NL Design System?
             </p>
+            <ul>
+              <li><a href="https://www.gebruikercentraal.nl/agenda/soort/nl-design-system/">Neem deel aan onze 2-wekelijkse Heartbeat-sessies</a></li>
+              <li><a href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">Schrijf je in voor onze nieuwsbrief</a></li>
+              <li><a href="https://designsystem.gebruikercentraal.nl/blogs-nieuws/">Neem een kijkje op onze blogpagina</a></li>
+            </ul>
           </HomepageTeaser>
         </HomepageTeasers>
         <HomepageFooter>
           <div>
             <h2>Over het kernteam</h2>
             <p>
-              Het kernteam bestaat uit projectleider Angela Imhof, lead
-              developer Robbert Broersma, front-end developer Yolijn van der
-              Kolk en designer Rogier Barendregt.
-            </p>
-            <p>
-              <Link class="mega-footer-link" to="docs/over">Meer over het kernteam</Link>.
-            </p>
-            <p>
-              <Link class="mega-footer-link" to="https://gebruikercentraal.nl">Meer over Gebruiker Centraal</Link>.
+              Het NL Design System wordt ontwikkeld door <a href="docs/meedoen/kernteam/">een vast kernteam</a> bij Gebruiker Centraal.
             </p>
           </div>
           <div>
             <h2>Samenwerking</h2>
             <p>
-              Het kernteam van het NL Design System werkt onder andere samen met de volgende organisaties:
+              Met <a href="docs/meedoen/">een community</a> werken we aan een begrijpelijke, gebruiksvriendelijke én toegankelijke online dienstverlening voor overheidsorganisaties.
             </p>
-            <ul>
-              <li>Gemeente Den Haag</li>
-              <li>Gemeente Utrecht</li>
-              <li>Logius</li>
-            </ul>
           </div>
         </HomepageFooter>
       </main>

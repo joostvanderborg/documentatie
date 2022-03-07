@@ -1,7 +1,7 @@
 ---
 title: Kernteam
 hide_title: true
-hide_table_of_contents: false
+hide_table_of_contents: true
 sidebar_label: Kernteam
 pagination_label: Kernteam
 description: Kernteam NL Design System
@@ -22,15 +22,15 @@ Dagelijks werkt ons vaste kernteam aan het NL Design System, samen met alle betr
 
 ## Het kernteam bestaat uit:
 
-- Projectleider Angela Imhof
-- Lead developer Robbert Broersma
-- Front-end developer Yolijn van der Kolk
-- Designer Rogier Barendregt
+- Projectleider Angela Imhof, <a href="mailto:angela.imhof@ictu.nl">angela.imhof@ictu.nl</a>
+- Lead developer Robbert Broersma, <a href="mailto:robbert.broersma@ictu.nl">robbert.broersma@ictu.nl</a>
+- Front-end developer Yolijn van der Kolk, <a href="mailto:yolijn.vanderkolk@ictu.nl">yolijn.vanderkolk@ictu.nl</a>
+- Designer Rogier Barendregt, <a href="mailto:rogier.barendregt@ictu.nl">rogier.barendregt@ictu.nl</a>
 
-Heb je een vraag voor een van onze kernteamleden? Neem dan gerust contact op, we vertellen je graag meer over het NL Design System.
+Heb je een vraag voor een van onze kernteamleden? <a href="contact">Neem dan gerust contact op</a>, we vertellen je graag meer over het NL Design System.
 
 ## Samenwerkingen NL Design System
 
-Het NL Design System is een initiatief van Gebruiker Centraal. Daarbij wordt nauw samengewerkt met onder andere het programma Mens Centraal, DUO, de Code for NL community, Common Ground en vele andere (overheids)partijen. De opdrachtgever van het project is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
+Het NL Design System is een initiatief van <a href="https://www.gebruikercentraal.nl">Gebruiker Centraal</a>. Daarbij wordt nauw samengewerkt met onder andere het programma Mens Centraal, DUO, de Code for NL community, Common Ground en vele andere (overheids)partijen. De opdrachtgever van het project is het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties.
 
 Wil je op de hoogte blijven van het kernteam en alle ontwikkelingen? <a href="https://designsystem.gebruikercentraal.nl/nieuwsbrieven/">Meld je dan aan voor onze nieuwsbrief</a>.

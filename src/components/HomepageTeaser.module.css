@@ -24,7 +24,7 @@
   text-decoration: underline;
 }
 
-.homepage-teaser p a {
+.homepage-teaser p a, .homepage-teaser li a { /* Target link in paragraphs and lists, but not in CtA button (likely better to style CtA button accordingly instead!) */
 	color: white;
 	text-decoration: underline;
 }

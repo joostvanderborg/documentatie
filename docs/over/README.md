@@ -1,7 +1,7 @@
 ---
 title: Introductie NL Design System
 hide_title: true
-hide_table_of_contents: false
+hide_table_of_contents: true
 sidebar_label: Introductie
 sidebar_position: 1
 pagination_label: Introductie
