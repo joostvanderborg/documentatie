@@ -28,3 +28,7 @@
 	color: white;
 	text-decoration: underline;
 }
+
+.homepage-teaser:last-child div:last-child a { /* Quick dirty hack to temporarily disable call-to-action button in last homepage teaser module */
+	display: none !important;
+}

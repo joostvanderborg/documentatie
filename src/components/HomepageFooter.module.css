@@ -9,7 +9,7 @@
 .homepage-footer__container {
   display: grid;
   grid-auto-flow: column;
-  gap: 128px;
+  gap: 128px; /* Aligning text with homepage teaser modules */
 }
 
 @media (max-width: 996px) {
