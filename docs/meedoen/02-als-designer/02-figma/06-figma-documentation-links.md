@@ -1,19 +1,20 @@
 ---
-title: Documentation links
+title: Documentatie links
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Documentation links
-pagination_label: Documentation links
-description: Documentation links Figma
+sidebar_label: Documentatie links
+pagination_label: Documentatie links
+description: Documentatie links in Figma
 keywords:
   - designer
   - figma
+  - documentation
 ---
 
-# Documentation links
+# Documentatie links
 
-Figma allows referencing component documentation and best practices from its Design panel. The input accepts a standard URL.
+Figma maakt het mogelijk om naar component documentatie en best practices te verwijzen vanuit het Design paneel. De invoer accepteert een standaard URL.
 
-Documentation links also work in the instances of components.
+Documentatie links werken ook in de instances van componenten.
 
-Documentation links can be set on individual component variants as well.
+Documentatie links kunnen ook worden ingesteld (overschreven) op individuele component varianten.

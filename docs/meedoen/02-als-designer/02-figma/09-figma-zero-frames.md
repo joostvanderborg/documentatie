@@ -4,7 +4,7 @@ hide_title: true
 hide_table_of_contents: true
 sidebar_label: Zero-frames
 pagination_label: Zero-frames
-description: NL Design System en Figma
+description: Zero-frames in Figma
 keywords:
   - designer
   - figma
@@ -12,8 +12,8 @@ keywords:
 
 # Zero-frames in Figma
 
-‘Zero-frames’ in conjunction with Auto layout is a technique that help with establishing for instance minimum widths or minimum height of elements, similar to how `min-width` and `min-height` is defined in CSS.
+‘Zero-frames’ in combinatie met Auto layout stelt je in staat om bijvoorbeeld minimum breedtes of hoogtes van elementen, vergelijkbaar met hoe `min-width` en `min-height` zich in CSS gedragen na te bootsen in Figma.
 
-This technique comes in handy if, for instance, you want to define a minimum width for buttons or a minimum height for cards.
+Deze techniek komt van pas als je bijvoorbeeld een minimumbreedte voor knoppen of een minimumhoogte voor kaarten wilt instellen.
 
-For an in-depth explanation of this technique see the **[Pushing Figma to its limits** presentation](https://youtu.be/hnPIpkvDxjc?t=79).
+Kijk het filmpje **[Pushing Figma to its limits** presentation](https://youtu.be/hnPIpkvDxjc?t=79) voor uitgebreide uitleg van deze techniek.

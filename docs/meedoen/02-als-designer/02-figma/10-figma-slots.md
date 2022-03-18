@@ -12,10 +12,10 @@ keywords:
 
 # Slots in Figma
 
-‘Slotting’ is a technique that allow addition or removal of content from a Figma component and have its layout automatically expand or contract based on its content.
+Slotting' is een techniek die het mogelijk maakt inhoud toe te voegen aan of te verwijderen uit een Figma component waarmee de lay-out automatisch mee schaalt op basis van de inhoud.
 
-This concept can also be utilised to already establish basic guidelines in your design file. A good example of this is a radio button group. Where your UX guidelines likely dictate a maximum number of radio buttons within a single group before suggesting using a different component such as a select menu, you can create a radio button group already restricted to a maximum number of options.
+Dit concept kan ook worden gebruikt om al basisrichtlijnen in ontwerpbestand vast te leggen. Een goed voorbeeld hiervan is een groep radioknoppen. Waar UX-richtlijnen waarschijnlijk een maximum aantal radiobuttons in een enkele groep voorschrijven voordat een andere component zoals een keuzemenu gebruikt dient te worden, kan je een groep radiobuttons maken die al beperkt is tot een maximum aantal opties.
+  
+Een groep radiobuttons met een maximum van vijf opties zou er ongeveer zo uitzien, elk aantal tussen één en vijf kan worden gekozen door eenvoudig de opties te verbergen die niet nodig zijn:
 
-A radio button group component restricted to a maximum of five options would look similar to this, any amount between one and five can be chosen by simply hiding the options not needed:
-
-![Slotting technique in Figma used to limit radio button group options](https://user-images.githubusercontent.com/248921/140961714-f5b2e84d-33db-4c29-aba5-c79a69124d5f.png)
+![Slotting techniek in Figma gebruikt om radio button groep opties te beperken](https://user-images.githubusercontent.com/248921/140961714-f5b2e84d-33db-4c29-aba5-c79a69124d5f.png)

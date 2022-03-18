@@ -1,51 +1,52 @@
 ---
-title: Figma File structure
+title: Bestandsstructuur in Figma
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: File structure
-pagination_label: File structure
-description: NL Design System File structure in Figma
+sidebar_label: Bestandsstructuur
+pagination_label: Bestandsstructuur
+description: NL Design System bestandsstructuur in Figma
 keywords:
   - designer
   - figma
+  - bestandsstructuur
 ---
 
-# File structure in Figma
+# Bestandsstructuur in Figma
 
-A proper file structure helps in scanning and navigating Figma files. High-level sectioning (such as component groups, components, component specifications, or examples) helps quickly navigate to these sections.
+Een goede bestandsstructuur helpt bij het scannen en navigeren door Figma bestanden. Sectie-indeling (zoals componentgroepen, componenten, componentspecificaties of voorbeelden) helpt om snel naar deze secties te navigeren.
 
-The keyboard shortcuts `1` and `2` allow quickly zooming in on either the whole page or a selection respectively.
+Met de sneltoetsen `1` en `2` kan snel worden ingezoomd op respectievelijk de hele pagina of een selectie.
 
-With proper sections and layers, you can zoom into a section or layer by selecting it from the layer panel and zooming in by pressing `2`. Zooming back to the either page or 100% of the current view can be done by pressing `1` and `0` respectively.
+Met juiste secties en lagen, kan je makkelijk inzoomen op een sectie of layer door deze te selecteren in het layer paneel en in te zoomen door op `2` te drukken. Terug zoomen naar de pagina of 100% van de huidige weergave kan door respectievelijk op `1` en `0` te drukken.
 
-## Grouping
+## Groeperen
 
-Grouping in Figma is done by either creating a group or frame. Out of these two frames offer the most flexibility.
+Groeperen in Figma wordt gedaan door ofwel een groep of een frame te maken. Frames bieden hierbij de meeste flexibiliteit.
 
-[Components can be considered another form of grouping](05-figma-components.md).
+[Componenten kunnen worden beschouwd als een vorm van groepering](05-figma-components.md).
 
 ### Groups
 
-Groups simply group multiple objects together. Resizing a group causes the object it contains to scale with it.
+Groups groeperen eenvoudigweg meerdere objecten samen. Door de grootte van een group te wijzigen, worden de objecten die het bevat mee geschaald.
 
-Properties that can be set on a group are position, dimension, blending mode, and opacity. Fill, stroke, and effects affect all objects inside of a group.
+Eigenschappen die op een groep kunnen worden ingesteld zijn positie, dimensie, blending mode en opacity. Fill, stroke en effecten hebben invloed op alle objecten in een groep.
 
 ### Frames
 
-Resizing a frame causes objects within it to respond to their individual constraints. Objects can be set to a fixed position within, or set to fill the width and/or height of the parent frame.
+Het veranderen van de grootte van een frame zorgt ervoor dat objecten binnen het frame reageren op hun individuele ‘constraints’. Objecten kunnen op een vaste positie worden gezet, of zo worden ingesteld dat ze de breedte en/of hoogte van het parent frame vullen.
 
-Another benefit of frames is that you often do not need a vector object to create an element; i.e. properties for a button such as background or border radius, width, and color can be set directly on the frame itself.
+Een ander voordeel van frames is dat je vaak geen genest vector-object nodig hebt om een element te maken; d.w.z. eigenschappen voor een knop zoals achtergrond of rand-radius, breedte en kleur kunnen direct op het frame zelf worden ingesteld. Hiervoor is geen achtergrond vector nodig en komt daardoor overeen met hoe dit in de front-end code geimplementeerd wordt.
 
-Auto layout can only be set on frames, applying auto-layout to a group will convert it into a frame automatically.
+Auto layout kan alleen op frames toegepast worden. Auto-layout toepassen op een group zal deze automatisch omzetten in een frame.
 
-## Emojis aid quick scanning
+## Emojis helpen snel visueel scannen
 
-Emojis in page and layer naming can aid quick scanning or provide a means to quickly check a status.
+Emojis in de naamgeving van pagina's en layers helpen om snel te scannen of om snel een status te controleren.
 
-![Emojis in page and component names](https://user-images.githubusercontent.com/248921/140959174-76e45980-73df-43c1-b918-f6cd14af3a29.png)
+![Emojis in pagina en component namen](https://user-images.githubusercontent.com/248921/140959174-76e45980-73df-43c1-b918-f6cd14af3a29.png)
 
 ## Nesting
 
-Avoid unnecessary folder nesting, but do use nesting to intentionally group related elements.
+Vermijd onnodig ‘nesting’ in mappen, maar gebruik nesting wel om verwante elementen opzettelijk te groeperen.
 
-![Unintentional and intentional nesting examples](https://user-images.githubusercontent.com/248921/140959366-05df035f-3255-4346-8c65-f06056b241f0.png)
+![Voorbeelden van onopzettelijke en opzettelijke nesting](https://user-images.githubusercontent.com/248921/140959366-05df035f-3255-4346-8c65-f06056b241f0.png)

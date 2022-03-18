@@ -11,30 +11,30 @@ keywords:
   - figma
 ---
 
-# The NL Design System and Figma
+# Het NL Design System en Figma
 
-At NL Design System we work with Figma for designing components and patterns.
+Bij het NL Design System werken we met Figma voor het ontwerpen van componenten en patronen.
 
-We collaborate and share knowledge on Figma with designers from the municipality of Utrecht, The Hague and Haarlem as well as Logius amongst others.
+We werken samen en delen Figma kennis met onder andere ontwerpers van de gemeente Utrecht, Den Haag en met Logius.
 
-The goal is to offer proven components and patterns designed by these and other organisations as a ‘white-label‘ variant that can be tailored to suit your organisation’s own visual style and brand experience.
+Het doel is om beproefde componenten en patronen die door deze en andere organisaties zijn ontworpen, aan te bieden als een ‘white-label’ variant die kan worden afgestemd op de eigen visuele stijl en merkbeleving van een organisatie.
 
-The address of our Figma team is [https://www.figma.com/@nldesignsystem](https://www.figma.com/@nldesignsystem).
+Ons Figma team adres is [https://www.figma.com/@nldesignsystem](https://www.figma.com/@nldesignsystem).
 
-## A shared design language
+## Een gedeelde ontwerptaal
 
-In Figma, we aim to bridge the gap between designers and developers. We opt to use for instance the same naming conventions as we do in our front-end codebase. This facilitates communication between designers and developers and helps streamline designer to developer handoff.
+In Figma willen we de kloof tussen ontwerpers en ontwikkelaars overbruggen. We kiezen ervoor om bijvoorbeeld dezelfde naamgeving conventies te gebruiken als in onze front-end codebase. Dit vergemakkelijkt de communicatie tussen ontwerpers en ontwikkelaars en helpt de overdracht van ontwerper naar ontwikkelaar te stroomlijnen.
 
-## Table of contents
+## Inhoudsopgave
 
-- [Naming in Figma](02-figma-naming.md)
-- [File structure in Figma](03-figma-file-structure.md)
+- [Naamgeving in Figma](02-figma-naming.md)
+- [Bestandsstructuur in Figma](03-figma-file-structure.md)
 - [Design tokens in Figma](04-figma-design-tokens.md)
-- [Creating components in Figma](05-figma-components.md)
-- [Documentation links](06-figma-documentation-links.md)
-- [Version history](07-figma-version-history.md)
+- [Componenten maken in Figma](05-figma-components.md)
+- [Documentatie links](06-figma-documentation-links.md)
+- [Versiebeheer](07-figma-version-history.md)
 - [Auto layout in Figma](08-figma-autolayout.md)
 - [Zero-frames in Figma](09-figma-zero-frames.md)
 - [Slots in Figma](10-figma-slots.md)
-- [Responsive behaviour](11-figma-responsive-behaviour.md)
-- [Resources](12-figma-resources.md)
+- [Responsive gedrag](11-figma-responsive-behaviour.md)
+- [Referenties](12-figma-resources.md)

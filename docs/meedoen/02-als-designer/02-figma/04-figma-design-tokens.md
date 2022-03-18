@@ -8,308 +8,312 @@ description: Design tokens in Figma
 keywords:
   - designer
   - figma
+  - design tokens
 ---
 
 # Design tokens in Figma
 
-By using design tokens, both designers and developers share a unified language. It allows all disciplines to reference design features, properties, components, etc. by the same name.
+Door design tokens te gebruiken, delen zowel ontwerpers als ontwikkelaars eenzelfde taal. Het stelt iedereen in staat om te verwijzen naar ontwerpkenmerken, eigenschappen, componenten, enz. met dezelfde naam.
 
-In its essence tokens are a _key : value_ pair, where the key is the property, and the value, well, its value.
+Design tokens zijn een _key : value_ paar, waarbij de key de eigenschap is, en de value, de waarde de waarde van die eigenschap.
 
-Through design tokens, we can draw from a ‘single source of truth‘, meaning that they live in one centralised location to be used by both front-end and design tooling. To translate the tokens between our front-end codebase and Figma we use [Style Dictionary](https://amzn.github.io/style-dictionary/).
+Door het gebruik van design tokens garanderen we een ‘single source of truth’, wat betekent dat deze op één gecentraliseerde plaats staan en zowel door front-end als ontwerp tooling gebruikt worden. Om tokens te vertalen tussen front-end codebase en Figma gebruiken we [Style Dictionary](https://amzn.github.io/style-dictionary/).
 
-Until Figma provides native support for design tokens we are currently dependant on a plugin. We eventually landed on the [Figma Tokens plugin](https://docs.tokens.studio/). Not only is this plugin continuously maintained, the developer is also open to suggestions and improvements.
+Totdat Figma native support voor design tokens heeft zijn we aangewezen op een plugin om met design tokens te werken. We gebruiken hiervoor de [Figma Tokens plugin](https://docs.tokens.studio/). Niet alleen wordt deze plugin continu onderhouden, de ontwikkelaar staat ook open voor suggesties en verbeteringen.
 
-Multiple token sets can be loaded in Figma. This allows us to easily convert to other visual styles and brands based on a white-label design. This also makes it possible to spot which design tokens a visual style might still be missing and provide sane defaults in case of missing visual properties, for instance when a brand’s visual style does not provide for feedback colors.
+Meerdere token-sets kunnen met deze plugin in Figma worden geladen. Dit maakt het mogelijk om eenvoudig andere visuele stijlen en merkbeleving toe te passen op basis van een white-label ontwerp. Tevens maakt dit het mogelijk om snel aan te tonen of er in een visuele stijl design tokens ontbreken en te voorzien in ‘sane defaults’. So is het bijvoorbeeld mogelijk om snel inzicht te krijgen of de visuele stijl van een merk wel of niet voorziet in feedback kleuren.
 
-For this to work however, we need to pay close attention to the naming convention of tokens. One other important note is that tokens are not saved as part of Figma files, in order to use them, they have to be set up first and either manually updated or synchronised via GitHub.
+For this to work however, we need to pay close attention to the naming convention of tokens. Om dit succesvol te laten werken, dienen we goed te letten op de naamgeving conventie van tokens. 
 
-## Token levels
+Tokens worden niet opgeslagen als onderdeel van Figma bestanden, om ze te kunnen gebruiken worden deze opgeslagen en gesynchroniseerd via GitHub.
 
-We use a layered approach to design tokens where brand/product styling is abstracted from the underlying structural design language.
+## Token niveaus
 
-The three levels are:
+Wij gebruiken een gelaagde aanpak voor het ontwerpen met tokens waarbij de merkidentiteit en visuele taal wordt geabstraheerd van de onderliggende structuur.
+
+De drie niveau’s:
 
 1. Brand tokens,
-2. Common tokens, and
+2. Common tokens, en
 3. Component tokens
 
-[Here is a short introductory video on the concept of token levels (YouTube link)](https://www.youtube.com/watch?v=mDPbLJSQYdo).
+[Hier is een korte inleidende video over het concept van token niveaus (YouTube link)](https://www.youtube.com/watch?v=mDPbLJSQYdo).
 
 ### Brand tokens
 
-Brand tokens define your brand or product’s visual language ‘options’; its colors, typography, sizing, etc.
+Brand tokens definiëren de visuele ‘opties’ van een merk of product; de kleuren, typografie, maatvoering, enz.
 
 You are free to use your own language when naming these tokens. You might already have internal conversations about your own unique `kleur-actieblauw` or `merkkleur-rood`. We advise you to use this language for your brand tokens. After all, tokens are meant to unify language between designers and developers. If you already have an established language in your organisation it is best to continue using this over relearning a new language.
 
+Voor het benoemen van deze brand tokens kan een eigen taal gebruikt worden. Wellicht worden intern al eigen unieke namen als `kleur-actieblauw` of `merkkleur-rood` gebruikt. Wij adviseren u om deze taal aan te blijven houden voor brand tokens. Tokens zijn immers bedoeld om eenzelfde taal te gebruiken tussen ontwerpers en ontwikkelaars. Wanneer er al een gevestigde taal bestaat in een organisatie is het beter deze te blijven gebruiken dan een nieuwe taal in te voeren.
+
 ### Common tokens
 
-One level below brand tokens are the common tokens. In these tokens, visual properties are assigned meaning. These tokens always refer to the brand tokens.
+Eén niveau onder brand tokens zijn de ‘common’ tokens. In common tokens wordt aan visuele eigenschappen betekenis toegekend. Deze tokens verwijzen altijd naar de brand tokens door middel van een alias.
 
-Common tokens are oft-recurring visual properties not specifically tied to a single component. A common token key:value pair is for example: `document-color: utrecht-color-black`.
+Common tokens zijn vaak terugkerende visuele eigenschappen die niet specifiek gebonden zijn aan een component. Een common token key:value paar is bijvoorbeeld: `document-color: utrecht-color-black`.
 
-Where the first `document-color` is the text foreground color, and `utrecht-color-black` references the color that the municipality of Utrecht has defined as their text foreground brand color.
+Waarbij de `document-color` de tekst voorgrondkleur is, en `utrecht-color-black` verwijst naar de kleur die de gemeente Utrecht heeft gedefinieerd als hun tekst voorgrond merkkleur.
 
-**Common tokens add semantic meaning** to common visual styles.
+**Common tokens voegen semantische betekenis** toe aan gemeenschappelijke visuele stijlen.
 
 ### Component tokens
 
-Component tokens are tokens used for specific components.
+Component tokens zijn tokens die gebruikt worden voor specifieke componenten.
 
-An example of a component token key: value pair is `button-primary-action-background-color: denhaag-color-primary-action`.
+Een voorbeeld van een component token key: value paar is bijvoorbeeld `button-primary-action-background-color: denhaag-color-primary-action`.
 
-Component tokens can refer to both brand or common tokens.
+Component tokens kunnen verwijzen naar zowel brand als common tokens.
 
-## Naming of tokens
+## naamgeving van tokens
 
-References to tokens (aliases) can be written in two ways, by enclosing the token in curly brackets (`{}`), or by using a trailing dollar sign (`$`).
+Verwijzingen naar tokens (aliassen) kunnen op twee manieren worden geschreven, door het token tussen accolades te zetten (`{}`), of door een dollarteken vooraan te zetten (`$`).
 
-The curly bracket notation is prefered since both the [W3C Design Tokens Community Group](https://design-tokens.github.io/community-group/format/#aliases-references) and [Style Dictionary](https://amzn.github.io/style-dictionary/#/tokens?id=referencing-aliasing) use this notation.
 
-## Setup and installation
+Accolades genieten de voorkeur daar zowel de [W3C Design Tokens Community Group](https://design-tokens.github.io/community-group/format/#aliases-references) als [Style Dictionary](https://amzn.github.io/style-dictionary/#/tokens?id=referencing-aliasing) deze gebruiken.
 
-**A word of caution: Once you have added or edited tokens in the plugin, be sure to push them to GitHub via the **book** icon in the top-right corner of the plugin. If you do not push the tokens to GitHub they will get lost.**
+## Installeren en instellen
 
-Our Figma tokens are stored in JSON format and synchronised to GitHub. This allows tokens to be shared between different Figma users and in multiple files and to experiment with tokens by using branching (if your Figma plan allows for branching).
+**Wees voorzichtig: Als je eenmaal tokens hebt toegevoegd of bewerkt in de plugin, zorg er dan voor dat je deze pusht naar GitHub via het **boek** icoontje in de rechterbovenhoek van de plugin. Als je de tokens niet naar GitHub pusht zullen deze verloren gaan.**
 
-- Start by [installing the plugin from the Figma plugin repository](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens).
-- Once installed, open it from the plugin menu and navigate through the help screens.
-- There are two ways to load the white-label design tokens which can be used as a basis for your own tokens.
-  1. If you want to play around and get comfortable start by [copying the white-label design tokens](https://github.com/nl-design-system/figma-designtokens/blob/main/whitelabel.tokens.json) and pasting them into the text field in the **JSON** panel (overwriting the default curly brackets). If you now navigate back to the **Tokens** panel you should see the tokens grouped in categories.
-  2. To load and synchronise the white-label design tokens, together with the tokens from other NL Design System contributors go to the **Sync** panel and select **GitHub** underneath Token Storage.
+Figma tokens worden opgeslagen in JSON formaat en gesynchroniseerd met GitHub. Dit maakt het mogelijk om tokens te delen tussen verschillende Figma gebruikers en in meerdere bestanden en om te experimenteren met tokens door gebruik te maken van branching (als het gebruikte Figma abonnement branching toelaat).
 
-For pulling from and pushing your tokens to HitHub a couple of credentials are needed.
+- Begin met het [installeren van de plugin](https://www.figma.com/community/plugin/843461159747178978/Figma-Tokens).
+- Eenmaal geïnstalleerd, open de plugin vanuit het plugin menu en navigeer door de help schermen.
+- Er zijn twee manieren om de white-label design tokens te laden die gebruikt kunnen worden als basis voor uw eigen tokens.
+  1. Als je vertrouwd wilt raken met tokens [kopieer dan eerst de white-label design tokens](https://github.com/nl-design-system/figma-designtokens/blob/main/whitelabel.tokens.json) en plak deze in het **JSON** paneel (overschrijf hierbij de bestaande accolades). Wanneer je terug navigeert naar het **Tokens** paneel zijn de tokens gegroepeerd in categorieën.
+  2. Om de white-label design tokens, of tokens van andere organisaties te laden en te synchroniseren, navigeer je naar het **Sync** paneel en selecteer je **GitHub** onder Token Storage.
 
-1. The _Name_ field takes a unique name you can specifiy yourself. This can be the name of your organisation or design system.
-2. See note below to obtain the _Personal Access Token_.
-3. The _Repository_ should point to `nl-design-system/figma-designtokens`.
-4. The _Default Branch_ is `main`.
-5. The _File Path_ should point to you design token JSON in the format `organisationname.tokens.json`, where `organisationname` is the unique name given to your JSON file.
-6. _baseUrl_ can be left empty.
+Om tokens te ‘pullen’ en te ‘pushen’ van en naar GitHub zijn inloggegevens nodig.
+
+1. In het _Name_ kan een unieke naam gegevens worden. Dit kan bijvoorbeeld de naam van een organisatie of design system zijn.
+2. Zie onderstaande opmerking voor het verkrijgen van een _Personal Access Token_.
+3. _Repository_ moet verwijzen naar `nl-design-system/figma-designtokens`.
+4. De _Default Branch_ is `main`.
+5. Het _File Path_ verwijst naar het design token JSON bestand en heeft het formaat `organisationname.tokens.json`. `organisationname` is hierbij de unieke naam van jouw JSON file.
+6. _baseUrl_ kan leeg blijven.
 
 ### Personal access token
 
-A personal access token allows you to see who made which changes to the design tokens.
+Met een personal access token kan je zien wie welke wijzigingen in de design tokens heeft aangebracht..
 
-To create a personal access token you need to have a GitHub account. If you don’t have a GitHub account, create one first. [This link should take you directly to the Personal access tokens page](https://github.com/settings/tokens). If this link works for you, skip to step 5 below.
+Om een personal access token aan te maken moet je een GitHub account hebben. Als je deze niet hebt, maak die dan eerst aan. [Deze link brengt u rechtstreeks naar de pagina met de Personal access tokens](https://github.com/settings/tokens). Als deze link werkt, ga dan door naar stap 5 hieronder.
 
-1. To generate an access token go to your [GitHub settings](https://github.com/settings/profile) via your user menu available from the top right dropdown next to your avatar:
+1. Om een access token te genereren, ga naar je [GitHub instellingen](https://github.com/settings/profile) via het gebruikersmenu in het dropdown menu boven naast je avatar:
 
-![User menu on GitHub](https://user-images.githubusercontent.com/248921/145817754-9ee5aaaf-89c4-4469-8222-1131adad4843.png)
+![Gebruikersmenu op GitHub](https://user-images.githubusercontent.com/248921/145817754-9ee5aaaf-89c4-4469-8222-1131adad4843.png)
 
-2. Choose [_settings_](https://github.com/settings/profile).
+2. Kies [_settings_](https://github.com/settings/profile).
 
-3. Next, scroll down and [use the _Developer settings_ link](https://github.com/settings/apps) underneath your Account settings:
+3. Scroll vervolgens naar beneden naar de [_Developer settings_ link](https://github.com/settings/apps) onder Account instellingen:
 
-![Developer settings on GitHub](https://user-images.githubusercontent.com/248921/145818135-a8c72615-bf7c-4378-9167-5e9b6719a3dd.png)
+![Developer settings op GitHub](https://user-images.githubusercontent.com/248921/145818135-a8c72615-bf7c-4378-9167-5e9b6719a3dd.png)
 
-4. From there, [navigate to the _Personal access tokens_ page](https://github.com/settings/tokens). You will be asked to provide your GitHub password.
+4. Van daaruit, [navigeer je naar je _Personal access tokens_ pagina](https://github.com/settings/tokens). Hierbij wordt je gevraagd nogmaals jouw GitHub wachtwoord in te vullen.
 
-5. Now, add a descriptive name for your token set, an expiration date (after which you will have to generate a new access token to be used in Figma Tokens), and check _repo_ (this will automatically select all sub-nodes). There is no need to select anything else from the list of options. Confirm by pressing the _Generate token_ button.
+5. Voeg nu een beschrijvende naam toe voor uw tokenset, een vervaldatum (expiration date). Na deze vervaldatum dien je een nieuw access token te genereren om te gebruiken in Figma Token. Vink _repo_ aan (dit selecteert automatisch alle sub-nodes). Het is niet nodig om iets anders te selecteren uit de lijst met opties. Bevestig door op de knop _Generate token_ te drukken.
 
-![New personal access token page on GitHub](https://user-images.githubusercontent.com/248921/145818855-179d985c-9a27-4093-bba1-130f6c5ec835.png)
+![New personal access token pagina op GitHub](https://user-images.githubusercontent.com/248921/145818855-179d985c-9a27-4093-bba1-130f6c5ec835.png)
 
-6. You have now generated your own unique token which will allow any commits to GitHub be identified as yours. Please note that you will only be able to copy this access token once, revisiting this page will **not** display the access token!
+6. Je hebt nu je eigen unieke toegangstoken gegenereerd waarmee alle commits op GitHub geïdentificeerd worden als de jouwe. Let op dat je deze toegangstoken maar één keer kan kopiëren, de toegangstoken wordt **niet** meer getoond wanneer je de pagina opnieuw bezoekt.
 
-![Generated GitHub access token](https://user-images.githubusercontent.com/248921/145819244-ed4560e6-3c29-40f5-aaf9-d4bfbf94b726.png)
+![Gegenereerde GitHub access token](https://user-images.githubusercontent.com/248921/145819244-ed4560e6-3c29-40f5-aaf9-d4bfbf94b726.png)
 
-7. Copy this token with the copy action next to the right of the access token and place it in the _Personal Access Token_ field in the Figma Tokens plugin:
+7. Kopieer dit token met de kopieeractie rechts naast het toegangstoken en plaats het in het _Personal Access Token_ veld in de Figma Tokens plugin:
 
-![Credential fields in Figma Tokens plugin](https://user-images.githubusercontent.com/248921/145819434-0a63b911-7751-4ef0-b6a7-05b088716098.png)
+![Inloggegevens velden in de Figma Tokens plugin](https://user-images.githubusercontent.com/248921/145819434-0a63b911-7751-4ef0-b6a7-05b088716098.png)
 
-8. You should now be able to commit any changes to your design tokens in the Figma Tokens plugin to GitHub.
+8. Je bent nu in staat om alle wijzigingen aan je design tokens in de Figma Tokens plugin op GitHub te bewaren.
 
-[Contact Rogier in case you run into issues](mailto:rogier.barendregt@ictu.nl).
+[Neem contact op met Rogier in het geval van problemen](mailto:rogier.barendregt@ictu.nl).
 
-## Editing of tokens
+## Bewerken van tokens
 
-Editing the JSON tokens is best done in an external code editor. This allows better readability and offers all the benefits of a code editor such as global search and replace, proper indentation, syntax highlighting, etc.
+Het bewerken van de JSON tokens gaat het best in een externe code editor. Dit zorgt voor een betere leesbaarheid en biedt alle voordelen van een code editor, zoals globaal zoeken en vervangen, juiste tekst-inspringing, syntax highlighting, enz.
 
-In order to edit the tokens simply select all the tokens (`CTRL+A`) in the JSON tab and copy them in your code editor.
+Om de tokens te bewerken selecteer je eenvoudig alle tokens (`CTRL+A`) in het JSON tabblad en kopieert je deze in een code editor.
 
-Once you are done editing the tokens, copy them back in the JSON tab in Figma Tokens.
+Als je klaar bent met het bewerken van de tokens, kopieert je deze terug naar de JSON tab in Figma Tokens.
 
-Keep in mind that the JSON format is strict, any comma or curly bracket that is omitted or not in the proper place will result in an invalid JSON file. The plugin will feed back an alert in case the JSON structure is invalid.
+Hou er rekening mee dat het JSON formaat erg strikt is, elke komma of haakje dat is weggelaten of niet op de juiste plaats staat zal resulteren in een ongeldig JSON bestand. De plugin zal een waarschuwing terugsturen in het geval dat de JSON structuur ongeldig is.
 
-![Error message when JSON is invalid from Figma Tokens](https://user-images.githubusercontent.com/248921/140959660-5c6bbff7-524a-4e13-8f1c-8cf756b1fda4.png)
+![Foutmelding wanneer JSON ongeldig is in Figma Tokens](https://user-images.githubusercontent.com/248921/140959660-5c6bbff7-524a-4e13-8f1c-8cf756b1fda4.png)
 
-## Commiting token changes to GitHub
+## Wijzigingen aan tokens naar GitHub pushen
 
-If you have made changes to tokens, these changes have to be pushed to GitHub. If not, any changes will be lost.
+Als je wijzigingen in de tokens hebt aangebracht, moeten deze naar GitHub gepushed worden. Doe je dit niet, dan zullen wijzigingen verloren gaan.
 
-Once there are changes to your tokens a blue dot appears next to the Push to GitHub (book) icon in the top right corner of the plugin:
+Zodra er wijzigingen zijn aan tokens verschijnt er een blauwe stip naast het Push to GitHub (boek) icoon in de rechter bovenhoek van de plugin:
 
-![Notification of token changes in Figma Tokens plugin to be commited to GitHub](https://user-images.githubusercontent.com/248921/145822431-4caecef3-8c1d-43ff-80f8-73d6cdc35a2c.png)
+![Notificatie van wijzigingen in de Figma Tokens plugin die naar GitHub moeten worden gecommit](https://user-images.githubusercontent.com/248921/145822431-4caecef3-8c1d-43ff-80f8-73d6cdc35a2c.png)
 
-Provide a consice description of the changes to tokens in the _Commit message_ field:
+Geef een duidelijke omschrijving van de wijzigingen in het _Commit message_ veld:
 
-![Details of commit message to GitHub](https://user-images.githubusercontent.com/248921/145822652-ee89c192-1140-416a-b671-4b2cdba6dba7.png)
+![Details van commit message naar GitHub](https://user-images.githubusercontent.com/248921/145822652-ee89c192-1140-416a-b671-4b2cdba6dba7.png)
 
-If you only use a _main_ branch (and do not use branching) leave the _Branch_ field as _main_.
+Wanneer je slechts de _main_ branch (en geen branching gebruikt) laat je het _Branch_ veld op _main_ staan.
 
-### Keep changes between commit to a minimum
+### Beperk veranderingen tussen commits tot een minimum
 
-It is good practice to keep changes to tokens to a minimum and work with a feature mindset (i.e. I am now working on feedback color, or I am now working on the type scale). This allows changes to be tracked more easily and also allows you to roll back to a specific change shoudl you have to.
+Probeer veranderingen tussen commits tot een minimum te beperken en te werken met een ‘feature mindset’ (bijvoorbeeld “ik ben nu bezig met feedback kleur”, of “ik ben nu bezig met de typografische schaal”). Op deze manier kunnen wijzigingen gemakkelijker worden getraceerd en kan je indien nodig terugdraaien naar een specifieke wijziging.
 
-## Pulling token changes from GitHub
+## Token wijzigingen van GitHub pullen
 
-If someone has made changes to tokens, the tokens have to be ‘pulled’ from GitHub in order to appear in the Tokens plugin. This is not done automatically and – contrary to the notification of your own token changes that have to be _pushed_ to GitHub – you are currently not notified of token changes that have to be _pulled_.
+Als iemand wijzigingen aan tokens heeft aangebracht, moeten de tokens van GitHub 'gepulled' worden om in de Tokens plugin te verschijnen. Dit wordt niet automatisch gedaan en - in tegenstelling tot de notificatie van je eigen token wijzigingen die _gepushed_ moeten worden naar GitHub - krijg je geen notificatie van token wijzigingen die _gepulled_ moeten worden.
 
-It is therefor good practice to always pull from GitHub when you open the Figma Tokens plugin.
+Het is daarom een goed idee om altijd van GitHub te _pullen_ wanneer je de Figma Tokens plugin opent.
 
-Pulling tokens from GitHub is done with the _refresh_ icon in the top right corner of the plugin:
+Het pullen van tokens uit GitHub wordt gedaan met het _refresh_ icoontje in de rechterbovenhoek van de plugin:
 
-![Pulling token from GitHub](https://user-images.githubusercontent.com/248921/145823867-d12d84b2-d34a-42aa-909b-0ea84b0dd846.png)
+![Tokens van GitHub halen](https://user-images.githubusercontent.com/248921/145823867-d12d84b2-d34a-42aa-909b-0ea84b0dd846.png)
 
-## Backup of tokens
+## Backup van tokens
 
-Another benefit of editing the tokens in an external editor is that it is easy to keep a backup copy which in turn can be added to your GitHub repository for extra backup safety or keeping all related files together.
+Het bijkomende voordeel van het bewerken van tokens in een externe editor is dat het makkelijk is om een backup kopie te bewaren die aan je GitHub repository toegevoegd kan worden voor extra backup of om alle gerelateerde bestanden bij elkaar te houden.
 
-We highly recommend to make a backup each time you have done any work on tokens in Figma Tokens.
+Wij raden aan om een backup te maken steeds wanneer je enig werk hebt verricht aan tokens in Figma Tokens.
 
-## Remarks
+## Opmerkingen
 
-Figma is a great tool to design web interfaces. However due to the flexible nature of the Web it is not possible to mimic the medium and its behaviour exactly in Figma.
+Figma is een geweldige tool voor het ontwerpen van web interfaces. Door de flexibele aard van het Web is het echter niet mogelijk om het medium en zijn gedrag exact na te bootsen in Figma.
 
-### Values and units are not possible in Figma
+### Waarden en eenheden zijn niet mogelijk in Figma
 
-Values and units that are not possible to use in conjunction with Figma Tokens are:
+Waarden en eenheden die niet kunnen worden gebruikt in combinatie met Figma Tokens zijn:
 
-- ex (X-height of font)
-- ch (width of character 0 in chosen fontset, or width of any character in a monospace font)
+- ex (X-hoogte van een font)
+- ch (breedte van het karakter _0_ in het gekozen fontbestand, of de breedte van ieder karakter in een ‘monospace’ font)
 - em
 - rem
 
-EMs and REMs should be converted to ‘absolute’ units. One tool that can help converting these is [http://pxtoem.com/](http://pxtoem.com/).
+EMs en REMs dienen omgezet te worden naar ‘absolute’ waardes. Een tool die daarbij kan helpen is [http://pxtoem.com/](http://pxtoem.com/).
 
 ![PXtoEM tool](https://user-images.githubusercontent.com/248921/140959962-dab2fe1d-e27c-433e-a8cf-c79c103e8e6c.png)
 
-![PXtoEM tool with em value converted to px](https://user-images.githubusercontent.com/248921/140960000-4b81b493-8b6a-4465-979c-610f056e847d.png)
+![PXtoEM tool met een em waarde naar px geconverteerd](https://user-images.githubusercontent.com/248921/140960000-4b81b493-8b6a-4465-979c-610f056e847d.png)
 
-It allows EMs to be converted to pixel values which can be used in Figma. The base pixel value is the size of your ‘root’ base (font) size. In most cases this will be 16px.
+Hiermee kunnen EM's worden geconverteerd naar pixelwaarden die in Figma kunnen worden gebruikt. De basis pixel waarde is de grootte van je 'root' (font) grootte. In de meeste gevallen zal dit 16px zijn.
 
-Since REM sizing depends on its parent sizing determining the EM value is a bit more tricky. In these cases you should calculate what the EM value is based on a sized element container(s). One solution is to use your browser’s developer tools to see what the ‘computed value’ of an element’s size is.
+Aangezien REM waarden afhangen van de bovenliggende groottes is het bepalen van de EM waarde van deze lastiger. In deze gevallen moet je berekenen wat de EM waarde is op basis van de grootte van een element container(s). Een oplossing is om de developer tool van je browser te gebruiken om te zien wat de 'berekende waarde' (calculated value) van de grootte van het betreffende element is.
 
-To do so, open your developer tools. For Chrome, go to **View** → **Developer** → **Developer tools** or use the keyboard shortcut `⌥+⌘+I` (MacOS) or `CTRL+ALT+I` (Windows) or right-click on the element and choose **Inspect**.
+Om dit te doen, open je de developer tools. In Chrome ga je naar **View** → **Developer** → **Developer tools** of gebruik je de sneltoetsen `⌥+⌘+I` (MacOS)/`CTRL+ALT+I` (Windows) of klik met de rechtermuisknop op het element en kies **Inspect**.
 
-From there go to the **Elements** tab, where you see the source code of the current page. Underneath the source code is another set of tabs with **Styles** open by default. Click on the second **Computed** tab to see the browser’s computed CSS values.
+Van daaruit ga je naar het **Elements** tab, waar je de (gegenereerde) broncode van de huidige pagina ziet. Onder de broncode bevindt zich een set tabbladen waarvan **Styles** standaard open is. Klik op het tweede **Computed** tabblad om de berekende CSS waarden van de browser te zien.
 
-When you have selected the element for which you want to see its calculated value, go to the property you want to know the value of. In case of the illustration below its the font-size. The value you want to attach to your token is in this case **17**.
+Wanneer je het element hebt geselecteerd waarvan je de berekende waarde wilt zien, ga dan naar de eigenschap waarvan je de waarde wilt weten. In het geval van de illustratie hieronder is dat de font-size. De waarde die je aan de token wilt koppelen is in dit geval **17**..
 
-![DevTools showing calculated CSS values](https://user-images.githubusercontent.com/248921/140960248-1beb10f7-59fa-4d8a-93a4-e4ccffb85a75.png)
+![DevTools toont berekende CSS waarden](https://user-images.githubusercontent.com/248921/140960248-1beb10f7-59fa-4d8a-93a4-e4ccffb85a75.png)
 
-## Colors
+## Kleuren
 
-Colors can be specified in multiple CSS-compatible formats:
+kleuren kunnen in de volgende formaten gespecificeerd worden:
 
 - Hex
 - RGB
 - RGBa
 - HSL
 - HSLa
-- Linear gradients (including multiple color steps and opacity levels)
+- Linear gradients (inclusief meerdere kleurstappen en opacity niveaus)
 
-Color can be applied both to borders and fills (background). By default the Token plugin applies color as a background fill. In order to apply color to a border, right-click the token and select **Border**.
+Kleur kan worden toegepast op zowel borders als fills (achtergrond). Standaard past de plugin kleur toe als een achtergrond fill. Om kleur toe te passen op een rand, klik rechts op het token en selecteer **Border**.
 
-![Figma Tokens size color options](https://user-images.githubusercontent.com/248921/140960875-03df21e8-3506-4abd-82b4-fb7be661c370.png)
+![Figma Tokens kleur opties](https://user-images.githubusercontent.com/248921/140960875-03df21e8-3506-4abd-82b4-fb7be661c370.png)
 
-## Borders
+## Kaders (borders)
 
-The following tokens for borders can be defined:
+De volgende tokens voor kaders kunnen worden gedefinieerd:
 
-1. Border color (see Colors section above)
-2. Border width
-3. Border radius
+1. Kader kleur (border color) (zie kleuren hierboven)
+2. Kader breedte (border width)
+3. Kader radius (border radius)
 
-## Sizing and spacing
+## Afmetingen en tussenruimte
 
-### Sizing
+### Afmetingen
 
-Sizing can be applied both on the _X_ (horizontal) and _Y_ (vertical) axis. By default sizing tokens are applied to both axes.
+Afmetingen kunnen worden toegepast op zowel de _X_ (horizontale) en _Y_ (verticale) as. Standaard worden deze op beide assen toegepast.
 
-If you want to set a sizing token only along the _X_ axis, select the token by right-clicking on the token and selecting **Width**.
+Indien je een afmeting alleen op de _X_ as toe wilt passen, selecteert je de token door er met de rechter muisknop op te klikken en **Width** te kiezen.
 
-![Figma Tokens size token options](https://user-images.githubusercontent.com/248921/140960907-0fc7ef14-f855-4d49-aa89-f78d44e01123.png)
+![Figma Tokens grootte token opties](https://user-images.githubusercontent.com/248921/140960907-0fc7ef14-f855-4d49-aa89-f78d44e01123.png)
 
-The same applies to the _Y_ axis for height, right-click the token and select **Height**.
+Hetzelfde geldt voor de _Y_ as voor de hoogte, klik met de rechtermuisknop op het token en kies **Height**.
 
-### Spacing
+### Tussenruimte (spacing)
 
-Where sizing can be applied to an element in its default state, spacing tokens can only be applied to elements when their container is set to Auto layout.
+Waar afmetingen kunnen worden toegepast op een standaard element, kunnen ‘spacing’ tokens alleen worden toegepast op elementen wanneer hun container is ingesteld op _Auto layout_.
 
-### Padding and margins
+### Padding en margins
 
-Spacing can be applied both on the _X_ (inline) and _Y_ (block) axis. By default a spacing token is applied to the **Gap** property.
+Spacing kan zowel op de _X_ (inline) en _Y_ (block) as toegepast worden. Standaard wordt een spacing token toegepast op de **Gap** property.
 
-![Figma Tokens space token options](https://user-images.githubusercontent.com/248921/140961019-ce202625-a1a2-4b66-bc55-29aaa473c02a.png)
+![Figma Tokens spacing token opties](https://user-images.githubusercontent.com/248921/140961019-ce202625-a1a2-4b66-bc55-29aaa473c02a.png)
 
-Right-clicking the token allows you to set the token to a number of properties:
+Door rechts te klikken op de token kan je een aantal eigenschappen van de token instellen:
 
-**Gap** is the spacing between objects and allows you to set margins between elements.
+**Gap** is de afstand tussen objecten en maakt het mogelijk om marges in te stellen tussen elementen.
 
-If Auto layout is set in the horizontal direction Gap can be used to add a left (`inline-start`) or right (`inline-end`) margin. When set to a vertical direction it can be used to set a top (`block-start`) or bottom (`block-end`) margin.
+Als Auto layout is ingesteld in de horizontale richting kan Gap worden gebruikt om een linker (`inline-start`) of rechter (`inline-end`) marge toe te voegen. In verticale richting kan Gap gebruikt worden om een bovenmarge (`block-start`) of ondermarge (`block-end`) in te stellen.
 
-Selecting **All** will add a uniform inner padding to objects.
+Door **All** te selecteren wordt een uniforme padding aan objecten toegevoegd.
 
-**Top**, **Right**, **Bottom**, **Left** will set the token value to the respective one-directional padding.
+**Top**, **Right**, **Bottom**, **Left** zal de waarde van de token in een enkele richting instellen.
 
-In order to add both inline and block margins to objects, it might sometimes be necessary to add an empty container element to your object.
+Om zowel inline- als block marges aan objecten toe te voegen, kan het in sommige gevallen nodig zijn om een leeg container-element aan je object toe te voegen.
 
-## Typography
+## Typografie
 
-Define the base body typeface with the token `document-font-family`. Keep in mind that ‘font stacks’, where fallback options for your preferred typeface can be defined in CSS are not supported in Figma. Only a single typeface should be defined.
+Definieer het brood lettertype met de `document-font-family` token. Houdt er rekening mee dat `font stacks`, waarbij fallback opties voor het gewenste lettertype in CSS gedefinieerd kunnen worden, niet ondersteund worden in Figma. Alleen een enkel lettertype kan worden gedefinieerd.
 
-Font weights (such as regular, medium, and bold) have to be defined exactly as they are described by the font author. Some fonts use the term ‘regular’ for its regular weight, whereas others use ‘400’ or ‘normal’.
+Lettergewichten (zoals regular, medium en bold) moeten **exact** gedefinieerd worden zoals deze in het font-bestand worden beschreven. Sommige lettertypes gebruiken de term ‘regular’ voor het normale gewicht, terwijl andere de term ‘400’ of ‘normal’ gebruiken.
 
-![Figma native typespecs panel](https://user-images.githubusercontent.com/248921/140961125-b1a81200-97ed-4e07-91c4-edf3a3a1710e.png)
+![Figma native typografisch paneel](https://user-images.githubusercontent.com/248921/140961125-b1a81200-97ed-4e07-91c4-edf3a3a1710e.png)
 
-It is vital to use the same name as used in the text panel in Figma. If this is not properly set, it will result in typographic tokens not being applied.
+Het is van vitaal belang om dezelfde naam te gebruiken als gebruikt in het typografische paneel in Figma. Als dit niet goed is ingesteld, zal dit ertoe leiden dat typografische tokens niet worden toegepast.
 
-### Modular typographic scale
+### Modulaire typografische schaal
 
-Defining a flexible type scale can be done through the Token plugin by [using math](https://docs.tokens.studio/tokens/using-math). From one single base font-size (generally your body paragraph text) you can create a flexible scale by multiplying or diving the base-size. This will allow you to set a fixed size interval between your paragraph text, headings, secondary text, and micro typography.
+Het definiëren van een flexibele lettertypeschaal kan worden gedaan via de Token plugin door [het gebruik van mathematische formules](https://docs.tokens.studio/tokens/using-math). Vanuit een enkele basis lettergrootte (de grootte van de broodtekst) kan je een flexibele schaal maken door de basis lettergrootte te vermenigvuldigen of te delen. Hiermee kan je een vaste intervalgrootte instellen tussen uw paragraaftekst, koptekst, secundaire tekst en microtypografie.
 
-![Type size token with math](https://user-images.githubusercontent.com/248921/140961346-929ac75b-1f10-4b2f-bac7-f33089436405.png)
+![Type size token met mathematische formules](https://user-images.githubusercontent.com/248921/140961346-929ac75b-1f10-4b2f-bac7-f33089436405.png)
 
-Here the token `font-size-xl` uses the `font-size-md` as a base and multiplies it by 1.25.
+Hier gebruikt de token `font-size-xl` de `font-size-md` als basis en vermenigvuldigt deze met 1.25.
 
 ![Type size token](https://user-images.githubusercontent.com/248921/140961372-22c61588-ef35-4801-b368-5151bf3ba191.png)
 
-The `font-size-md`, used for regular paragraph text is the only font-size defined at 16. All other font-sizes are automatically generated by multiplying or dividing `font-size-md`.
+`font-size-md`, gebruikt voor reguliere broodtekst is de enige font-grootte die gefixeerd is (in dit geval op 16dp). Alle andere lettergroottes worden automatisch gegenereerd door `font-size-md` te vermenigvuldigen of te delen en zullen dynamisch meeschalen wanneer de grootte van de broodtekst aangepast wordt.
 
-If you then were to change the base font-size, your modular scale will change dynamically.
+Als je al een flexibele modulaire schaal gebruikt binnen jouw visuele stijl, dan is deze eenvoudig om één-op-één over te nemen in Figma.
 
-Should you already use a flexible modular scale for within your visual style, it is easy to adopt one-to-one in Figma.
+### Samengestelde typografische tokens
 
-### Composite type tokens
+Om ‘samengestelde’ typografietokens te maken, zoals voor een kop- of paragraaftekst, dienen eerst alle afzonderlijke typografietokens gedefinieerd worden die samen gecombineerde tokens vormen. Een gecombineerd token verwijst naar elk van deze individuele tokens.
 
-In order to establish ‘combined’ typography tokens, such as headings one or a paragraph, all individual typography related tokens making up such combined tokens have to be defined first. A combined token references each of these individual tokens.
+![Samengestelde typografische tokens](https://user-images.githubusercontent.com/248921/140961614-18918637-1385-4cf4-a204-4ac415efff1e.png)
 
-![Composite type token](https://user-images.githubusercontent.com/248921/140961614-18918637-1385-4cf4-a204-4ac415efff1e.png)
-
-The typographic tokens that should be set in order to create a combined typographic token are:
+De typografische tokens die moeten worden ingesteld om een gecombineerd typografisch token te creëren zijn:
 
 - Font-family
 - Font-weight
 - Font-size
 - Line-height
-- Letter-spacing (spacing between characters, best left set to 0 to inherit kerning and spacing as defined by the typeface designer for most text with the possible exception of headings and text set in all-capitals)
-- Paragraph-spacing (spacing between consecutive paragraphs and/or headings)
+- Letter-spacing (ruimte tussen leestekens, bij voorkeur ingesteld op 0 om kerning en spatiëring te erven zoals gedefinieerd door de ontwerper van het lettertype, mogelijk met uitzondering van kopteksten en tekst die in hoofdletters is gezet)
+- Paragraph-spacing (tussenruimte tussen opeenvolgende paragrafen en/of kopteksten)
 
-## Creating styles from tokens
+## Styles maken van tokens
 
-Figma Styles can be created from tokens. Applying styles to objects automatically creates a link to the specific tokens in Figma Tokens. Only styles for typography and colors are created, other visual properties do not (yet) have dedicated style options in Figma.
+Figma Styles kunnen worden gemaakt van tokens. Het toepassen van stijlen op objecten creëert automatisch een link naar de specifieke tokens in Figma Tokens. Alleen styles voor typografie en kleuren worden aangemaakt, andere visuele eigenschappen hebben (nog) geen specifieke stijl opties in Figma.
 
-In order to create styles from tokens, click the Create Styles button at the bottom right of the plugin window.
+Om stijlen te maken van tokens, klik je op de _Create Styles_ knop rechtsonder in het plugin venster.
 
-![Arrow displying location of Create Styles button](https://user-images.githubusercontent.com/248921/150785647-25d391f6-42a9-4ab8-9a82-eb57ba665876.png)
+![Pijl die de plaats aangeeft van de Create Styles knop](https://user-images.githubusercontent.com/248921/150785647-25d391f6-42a9-4ab8-9a82-eb57ba665876.png)
 
-![Partial view of styles created from tokens](https://user-images.githubusercontent.com/248921/150785738-b2a89dd6-f561-484c-a656-62c3eff3e759.png)
-Partial view of styles created from tokens.
+![Gedeeltelijke weergave van styles gemaakt van tokens](https://user-images.githubusercontent.com/248921/150785738-b2a89dd6-f561-484c-a656-62c3eff3e759.png)
+Gedeeltelijke weergave van styles gemaakt van tokens.
 
-You can prevent tokens from being added to the Figma Styles panel by prefixing the token name with an underscore (`_`).
+Je kan voorkomen dat tokens worden toegevoegd aan het Figma Styles paneel door de tokennaam te voorzien van een underscore (`_`).
 
-## Resources
+## Referenties
 
 - [Figma Tokens documentation](https://docs.tokens.studio/)
 - [Design Tokens Glossary](https://www.designtokens.org/glossary/)

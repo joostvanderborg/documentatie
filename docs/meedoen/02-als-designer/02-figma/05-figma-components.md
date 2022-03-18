@@ -1,51 +1,52 @@
 ---
-title: Components
+title: Componenten
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Components
-pagination_label: Components
-description: Creating components in Figma
+sidebar_label: Componenten
+pagination_label: Componenten
+description: Componenten maken in Figma
 keywords:
   - designer
   - figma
+  - components
 ---
 
-# Creating components in Figma
+# Componenten maken in Figma
 
-Figma components are reusable objects. Components can spawn multiple ‘instances’ (children) with similar properties or contents. Editing properties or contents in the parent component affects all its instances. Use components when you want to create consistent reusable objects.
+Figma componenten zijn herbruikbare objecten. Meerdere ‘instances’ met vergelijkbare eigenschappen of inhoud kunnen met een enkel component gecreëerd worden. Het wijzigen van eigenschappen of inhoud in het ‘hoofd’ component heeft invloed op al zijn instances. Gebruik componenten wanneer je consistente, herbruikbare objecten wilt maken.
 
-Components can be nested in other components. It is good practice to begin with the smallest reusable object and create bigger components from there.
+Componenten kunnen genest worden in andere componenten. Het is een goede gewoonte om te beginnen met het kleinste herbruikbare object en van daaruit grotere componenten te maken.
 
-Since components behave as regular Figma frames, [auto layout can be applied to them](08-figma-autolayout.md).
+Aangezien componenten zich gedragen als gewone Figma frames, [kan Auto layout op ze toegepast worden](08-figma-autolayout.md).
 
-## Variants
+## Varianten
 
-In order to create variants of components a good approach is to first create a ‘base’ component containing all possible options and functionalities. This allows changes to all variants from a single base component.
+Om varianten van componenten te maken kan het soms nodig zijn eerst een ‘basis’ component te maken die alle mogelijke opties en functionaliteiten bevat. Dit maakt het mogelijk om alle varianten te wijzigen vanuit een enkele basiscomponent.
 
 https://user-images.githubusercontent.com/248921/151860040-fac715ab-c69f-4dc4-a6a6-68db277e26f4.mov
 
-Note the period (`.`) in front of the base component name. This tells Figma not to include the base component in the shared library.
+Let op de punt (`.`) voor de naam van het basis component. Hierdoor wordt het basis component niet opgenomen in de gedeelde library.
 
-Functionalities not available in one or more variants can then easily be hidden.
+Functionaliteiten die in een of meer varianten niet beschikbaar zijn, kunnen gemakkelijk worden verborgen.
 
-Names of states should exactly match between component variants. This means also capitalisation of names, `focus=on` and `Focus=on` resolve in two separate variant instances.
+Naamgeving van staten moet exact overeenkomen tussen component varianten. Dit betekent dat namen hoofdlettergevoelig zijn. `focus=on` en `Focus=on` resulteren in afzonderlijke varianten.
 
-Set a component’s default variant to the top left of the variant frame. This allow instances to select the default component variant by default. This is also the variant that appears in the Assets panel.
+Zet de standaardvariant van een component linksboven in het varianten frame. Hiermee wordt automatisch voor instances de standaard component variant geselecteerd. Dit is tevens de variant die verschijnt in het Assets-paneel.
 
-## Locking components
+## Componenten op slot zetten
 
-After creating a component it is good practice to lock it. This has no influence on the published library and users will still be able to use and edit a component’s instance from the published library.
+Na het creëren van een component kan je deze vergrendelen. Dit heeft geen invloed op de gepubliceerde libraries en gebruikers kunnen de instantie van een component nog steeds gebruiken en bewerken vanuit de gepubliceerde library.
 
-## Publishing components
+## Componenten publiceren
 
-When publishing components via Libraries → Publish try publishing in small batches with a detailed description of what has changed and whether there are any breaking changes.
+Probeer bij het publiceren van componenten via `Libraries → Publish` in kleine stukjes te publiceren met een gedetailleerde beschrijving van wat er is veranderd.
 
-It is good practice to accept component changes in each file that uses an instance of the changed component. This allows to pinpoint any potential bugs right away. Updating components in bulk makes it harder to pinpoint any potential bugs and tracing it back to a specific publication.
+Het is een goede gewoonte om component wijzigingen te accepteren in elk bestand dat een instance van het gewijzigde component gebruikt. Dit maakt het mogelijk om potentiële bugs meteen te lokaliseren. Het in bulk bijwerken van componenten maakt het moeilijker om potentiële bugs te lokaliseren en terug te voeren naar een specifieke publicatie.
 
-## Prevent components from being published
+## Voorkomen dat componenten worden gepubliceerd
 
-From time to time there might be a need to use components only locally, whether it is a often recuring design system specific component, or a component that is not functional on its own but only in a composited component.
+Soms kan het nodig zijn componenten alleen lokaal te gebruiken, of het nu gaat om een component die vaak terugkeert in een specifiek ontwerpsysteem, of om een component die op zichzelf niet functioneel is maar alleen in de context van een samengesteld component.
 
-In these cases components can be prevented from being published by adding a leading underscore (`_`).
+In deze gevallen kan worden voorkomen dat componenten worden gepubliceerd door een underscore toe te voegen (`_`).
 
-![Example of a Figma component that will not be published due to a leading underscore in its name](https://user-images.githubusercontent.com/248921/145391406-353368de-c7b7-49e8-88fd-cd1a5018dd41.png)
+![Voorbeeld van een Figma component die niet wordt gepubliceerd vanwege een underscore in de naam](https://user-images.githubusercontent.com/248921/145391406-353368de-c7b7-49e8-88fd-cd1a5018dd41.png)
