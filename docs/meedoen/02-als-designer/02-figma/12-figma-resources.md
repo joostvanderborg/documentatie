@@ -1,10 +1,10 @@
 ---
-title: Figma Resources
+title: Figma referenties
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Resources
-pagination_label: Resources
-description: NL Design System Resources for Figma
+sidebar_label: Referenties
+pagination_label: Referenties
+description: Handige Figma referenties
 keywords:
   - designer
   - figma
