@@ -17,8 +17,6 @@ Een juiste aanpak in ieder ontwerpbestand is om objecten direct na hun creatie e
 
 ![Naamloze geneste frames en groups](https://user-images.githubusercontent.com/248921/140958292-85ccee96-2add-4613-9daf-755b11bd433b.png)
 
-For instance, if you create a rectangle meant as background and border container for a text input it is good practice to name the rectangle `text-input-background` or similar right after creating the rectangle.
-
 Wanneer je bijvoorbeeld een rechthoek maakt die bedoeld is als achtergrond voorzien van een kader voor een tekst invoer, dan zou je deze rechthoek de naam `text-input-background` moeten geven.
 
 Waar mogelijk ontlenen componenten, layers, frames en design tokens (semantische) naamgeving van HTML- en SVG-tags, CSS properties, ARIA roles of BEM-naamgeving.
