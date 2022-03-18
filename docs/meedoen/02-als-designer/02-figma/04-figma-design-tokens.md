@@ -23,7 +23,7 @@ Totdat Figma native support voor design tokens heeft zijn we aangewezen op een p
 
 Meerdere token-sets kunnen met deze plugin in Figma worden geladen. Dit maakt het mogelijk om eenvoudig andere visuele stijlen en merkbeleving toe te passen op basis van een white-label ontwerp. Tevens maakt dit het mogelijk om snel aan te tonen of er in een visuele stijl design tokens ontbreken en te voorzien in ‘sane defaults’. So is het bijvoorbeeld mogelijk om snel inzicht te krijgen of de visuele stijl van een merk wel of niet voorziet in feedback kleuren.
 
-For this to work however, we need to pay close attention to the naming convention of tokens. Om dit succesvol te laten werken, dienen we goed te letten op de naamgeving conventie van tokens. 
+Om dit succesvol te laten werken, dienen we goed te letten op de naamgeving conventie van tokens. 
 
 Tokens worden niet opgeslagen als onderdeel van Figma bestanden, om ze te kunnen gebruiken worden deze opgeslagen en gesynchroniseerd via GitHub.
 
