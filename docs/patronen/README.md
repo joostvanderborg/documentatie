@@ -14,7 +14,9 @@ keywords:
 
 <!-- DEZE PAGINA ALS MDX MET MOOI DESIGN? -->
 
-# Gedocumenteerde patronen
+# Patronen
+
+Oplossingen voor veelvoorkomende problemen en herhalende klantreizen.
 
 - [DigiD patroon](02-digid.md)
 - [Formulier patronen](03-formulieren/README.md)

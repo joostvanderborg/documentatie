@@ -18,6 +18,8 @@ keywords:
 
 # Componenten van NL Design System
 
+Kant en klare, geteste componenten om digitale producten mee te maken.
+
 ## Componenten uit de community
 
 ### Den Haag

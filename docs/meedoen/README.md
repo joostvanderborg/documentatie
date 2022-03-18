@@ -22,7 +22,6 @@ Het NL Design System is van en voor de hele overheid. Daarom werken we binnen ee
 
 Ook hebben we behoefte aan specialisten die zich willen inzetten om het NL Design System te verbeteren, denk aan meedoen als:
 
-
 - [Product owner](01-als-product-owner/README.md)
 - [Designer](02-als-designer/README.md)
 - [Developer](03-als-developer/README.md)

@@ -14,4 +14,6 @@ keywords:
 
 # Documentatie
 
+Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie en onderzoeksresultaten van geteste ontwerpen.
+
 <!-- TODO! -->
