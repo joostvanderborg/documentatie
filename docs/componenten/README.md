@@ -18,12 +18,14 @@ keywords:
 
 # Componenten van NL Design System
 
-Kant en klare, geteste en herbruikbare bouwblokken om consistente digitale ervaringen voor eindgebruikers te maken. De componenten zijn voorzien van uitgebreide documentatie en richtlijnen.
+Hier vind je de componenten van het NL Design System. Dit zijn kant en klare, geteste en herbruikbare bouwblokken om consistente digitale ervaringen voor eindgebruikers te maken. De componenten zijn voorzien van uitgebreide documentatie en richtlijnen.
 
 Voor het ontwerpen van componenten gebruikt het NL Design System [Figma](meedoen/02-als-designer/02-figma/README.md).
 
-## Componenten uit de community
+## Hier vind je componenten uit de community:
 
-### Den Haag
+- Den Haag
+- Utrecht
 
-### Utrecht
+Hier worden regelmatig nieuwe componenten toegevoegd. Deze worden, op basis van input en praktijkervaring, bijgewerkt.
+

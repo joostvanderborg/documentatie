@@ -16,7 +16,11 @@ keywords:
 
 # Patronen
 
-In het NL Design System verzamelen we UX patronen. Dit zijn herbruikbare oplossingen en ‘best practices’ voor veelvoorkomende ontwerp-problemen en herhalende klantreizen.
+In het NL Design System verzamelen we UX-patronen. Dit zijn herbruikbare oplossingen en ‘best practices’ voor veelvoorkomende ontwerp-problemen en herhalende klantreizen.
 
-- [DigiD patroon](02-digid.md)
-- [Formulier patronen](03-formulieren/README.md)
+## Hier vind je de volgende patronen:
+
+- [DigiD afnemers richtlijnen](02-digid.md)
+- [Hoe om te gaan met formulieren](03-formulieren/README.md)
+
+Deze patronen worden regelmatig, op basis van input en praktijkervaring, bijgewerkt.

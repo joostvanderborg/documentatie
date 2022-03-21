@@ -13,6 +13,10 @@ keywords:
 
 # Leuk dat je als copywriter mee wil doen aan NL Design System
 
+Meedoen kan geheel op je eigen voorwaarden. 
+
+Kijk eens naar onze bestaande richtlijnen.
+
 ## Hier zijn wat middelen om je op weg te helpen:
 
 - [Aan de slag](02-aan-de-slag.md)

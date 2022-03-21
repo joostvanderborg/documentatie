@@ -14,6 +14,14 @@ keywords:
 
 # Documentatie
 
-In het NL Design System verzamelen we documentatie. Dit zijn praktische richtlijnen voor onder meer taalgebruik, toegankelijkheid en inclusie maar ook onderzoeksresultaten van geteste ontwerpen. Gebruik documentatie om een project te starten of een bestaand product te optimaliseren.
+In het NL Design System verzamelen we documentatie vanuit de community. Dit kan gebruikt worden om een project te starten of een bestaand product te optimaliseren. 
+
+## Hier vind je onder andere:
+
+- Richtlijnen voor taalgebruik
+- Richtlijnen voor toegankelijkheid en inclusie
+- Onderzoeksresultaten van geteste ontwerpen
+
+Deze documentatie wordt regelmatig bijgewerkt.
 
 <!-- TODO! -->
