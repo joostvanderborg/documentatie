@@ -13,6 +13,6 @@ keywords:
 
 # Voorbeeld applicaties
 
-Voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System.
+Hier tonen we voorbeeld applicaties gemaakt met richtlijnen en componenten uit het NL Design System. Deze voorbeelden zijn door diverse organisaties gemaakt op basis van documentatie, patronen en componenten van het NL Design System.
 
 <!-- Overzichtspagina met linkjes naar voorbeeld applicaties van NLDS -->
