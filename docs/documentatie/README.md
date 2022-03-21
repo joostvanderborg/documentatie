@@ -14,6 +14,6 @@ keywords:
 
 # Documentatie
 
-In het NLDS verzamelen we documentatie. Dit kunnen richtlijnen zijn over onder meer taalgebruik, toegankelijkheid en inclusie maar ook onderzoeksresultaten van geteste ontwerpen.
+In het NL Design System verzamelen we documentatie. Dit kunnen richtlijnen zijn over onder meer taalgebruik, toegankelijkheid en inclusie maar ook onderzoeksresultaten van geteste ontwerpen.
 
 <!-- TODO! -->

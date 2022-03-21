@@ -1,10 +1,10 @@
 ---
-title: Componenten - Overzicht
+title: Componenten
 hide_title: true
 hide_table_of_contents: true
-sidebar_label: Overzicht
+sidebar_label: Componenten
 sidebar_position: 1
-pagination_label: Overzicht
+pagination_label: Componenten
 description: Een overzicht van alle gedocumenteerde componenten uit NL Design System
 keywords:
   - componenten
