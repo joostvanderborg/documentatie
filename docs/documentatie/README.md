@@ -1,19 +1,19 @@
 ---
-title: Introductie NL Design System
+title: Documentatie NL Design System
 hide_title: true
 hide_table_of_contents: false
-sidebar_label: Introductie
+sidebar_label: Documentatie
 sidebar_position: 1
-pagination_label: Introductie
-description: NL Design System in 10 minuten
+pagination_label: Documentatie
+description: NL Design System documentatie
 keywords:
   - wat
   - design system
-  - introductie
+  - documentatie
 ---
 
 # Documentatie
 
-Richtlijnen over onder meer taalgebruik, toegankelijkheid en inclusie en onderzoeksresultaten van geteste ontwerpen.
+In het NLDS verzamelen we documentatie. Dit kunnen richtlijnen zijn over onder meer taalgebruik, toegankelijkheid en inclusie maar ook onderzoeksresultaten van geteste ontwerpen.
 
 <!-- TODO! -->
