@@ -1,0 +1,88 @@
+<!-- @license CC0-1.0 -->
+
+# Foutmelding bij formulier-invoer
+
+Het is niet voldoende om een foutmelding bij een formulierveld te tonen met HTML-code voor een gewone tekst. Het is belangrijk dat automatische hulpmiddelen voor toegankelijkheid kunnen herkennen dat een formulierveld _niet valide_ is en dat er een extra beschrijving is voor het formulierveld.
+
+Gebruik `aria-invalid="true"` voor een formulierveld waarvan de inhoud nog niet akkoord is. Bijvoorbeeld:
+
+```html
+<input name="email" value="info@" aria-invalid="true" />
+```
+
+Plaats een uniek ID in het `id`-attribuut van de tekst met de foutmelding, en verwijs in `aria-describedby=""` naar dat unieke ID. Bijvoorbeeld:
+
+```html
+<p><input aria-describedby="email-error" /></p>
+<p id="email-error">Dit is niet een geldig e-mailadres. Gebruik het formaat "hi@example.com".</p>
+```
+
+Voorkom dat de foutmelding niet zichtbaar in beeld is bij het formulierveld, bijvoorbeeld doordat je eerst moet scrollen op een klein scherm of wanneer de pagina is ingezoomd. De foutmelding tonen tussen het label en het formulierveld, in plaats van erna, kan helpen de situatie te voorkomen.
+
+Het is niet altijd mogelijk om het label, de foutmelding en het formulierveld tegelijk te zien. Je kunt de gebruiker hints geven om op zoek te gaan naar instructies om het veld valide te maken, door visueel hints te geven dat het veld niet valide is. Gebruik bijvoorbeeld een dikkere border voor het formulierveld, of plaats een extra border naast het hele formulierveld. Het is niet voldoende om alleen een rode kleur te gebruiken, want gebruikers die geen rode kleur zien moeten de hint ook kunnen zien.
+
+## Duidelijke melding
+
+Wanneer de gebruiker de invoer moet aanpassen zodat het formulierveld valide wordt, gebruik je de foutmelding om de gebruiker te helpen met een instructie en tips.
+
+Niet:
+
+- "Foutcode 1234". Een foutcode helpt de gebruiker niet.
+- "Voornaam is verplicht", of:
+- "Huisnummer ontbreekt". Je zegt de gebruiker niet wat de instructie is om verder te gaan.
+
+Wel:
+
+- "Vul het huisnummer in van je woning". Je zegt hoe je verder kunt gaan, en welk veld het om gaat.
+
+### Werk samen met gebruikers en andere teams
+
+Gebruik de ervaringen van andere teams die ook duidelijke foutmeldingen willen schrijven. Er zijn veelgebruikte formuliervelden waar andere teams gebruikersonderzoek mee hebben gedaan. De teksten voor labels en foutmeldingen worden gedeeld als open source. Doe je gebruikers een plezier en begin met deze teksten in plaats van eerst zelf iets te schrijven.
+
+## Hoe het niet moet
+
+### Geen verwijzing naar foutmelding
+
+```html
+<p>
+  <label for="mail">E-mail</label>
+  <input type="email" name="email" autocomplete="email" aria-invalid="true" />
+</p>
+<p>Dit e-maildres is niet toegestaan. Gebruik je zakelijke e-mailadres dat eindigt op @minaz.nl</p>
+```
+
+```html
+<p>
+  <label for="mail">E-mail</label>
+  <input type="email" name="email" autocomplete="email" aria-invalid="true" aria-describedby="email-invalid" />
+</p>
+<p id="email-invalid">Dit e-maildres is niet toegestaan. Gebruik je zakelijke e-mailadres dat eindigt op @minaz.nl</p>
+```
+
+### Foutmelding zonder `invalid` status
+
+```html
+<p>
+  <label for="mail">E-mail</label>
+  <input type="email" name="email" autocomplete="email" aria-describedby="email-invalid" />
+</p>
+<p id="email-invalid">Dit e-maildres is niet toegestaan. Gebruik je zakelijke e-mailadres dat eindigt op @minaz.nl</p>
+```
+
+```html
+<p>
+  <label for="mail">E-mail</label>
+  <input type="email" name="email" autocomplete="email" aria-invalid="true" />
+</p>
+<p>Dit e-maildres is niet toegestaan. Gebruik je zakelijke e-mailadres dat eindigt op @minaz.nl</p>
+```
+
+### Foutmelding in label
+
+```html
+<p>
+  <label for="mail">E-mail</label>
+  <input type="email" name="email" autocomplete="email" aria-invalid="true" />
+</p>
+<p>Dit e-maildres is niet toegestaan. Gebruik je zakelijke e-mailadres dat eindigt op @minaz.nl</p>
+```
