@@ -1,0 +1,116 @@
+<!-- @license CC0-1.0 -->
+
+# Heading
+
+## Koppen met informatie erboven
+
+In HTML code moet eerst `h1`-`h6` staan, daaronder gerelateerde informatie. Heeft je ontwerp gerelateerd informatie boven de tekst van kop staan, zoals een onderkop of een datum van publicatie, dan moet je in HTML als eerste de kop plaatsen en met CSS de volgorde omwisselen.
+
+## Pre-heading content
+
+In HTML code headings must come first, followed by related content. When your design displays related content such as a subtitle or metadata above the heading, it is .
+
+<!-- TODO: Koppen in formulieren -->
+<!-- TODO: h1-kop van formulierstap met één vraag -->
+
+## Hoe het niet moet
+
+### Tekst voor de kop
+
+Plaats geen relevante inhoud voor de `h1`-`h6` elementen, want dan wordt die tekst gemist door bijvoorbeeld gebruikers van een screen reader.
+
+```html
+<section>
+  <p>6 januari, door onze verslaggever ter plaatse</p>
+  <h1>Brand in Grote Kerk</h1>
+</section>
+```
+
+Begin in de HTML altijd met de kop, je kunt met CSS de onderdelen in een zelf gekozen volgorde tonen.
+
+```html
+<section>
+  <h1>Brand in Grote Kerk</h1>
+  <p class="before-heading">6 januari, door onze verslaggever ter plaatse</p>
+</section>
+<style>
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .before-heading {
+    order: -1;
+  }
+</style>
+```
+
+### Meer dan één `h1` bekend maken
+
+Koppen moeten een duidelijke hierarchie hebben, en één kop moet altijd de belangrijkste zijn. In sommige situaties kan het onduidelijk zijn hoe je een unieke `h1` kunt hebben op je pagina, maar het is belangrijk toch een oplossing te vinden.
+
+#### Gelijkwaardige onderwerpen
+
+Gebruik niet meerdere `h1` elementen wanneer een pagina bestaat uit verschillende gelijkwaardige onderwerpen, zoals een overzicht van nieuwsartikelen.
+
+Niet:
+
+```html
+<article>
+  <h1>Peilingen: geen meerderheid voor huidige coalitie</h1>
+</article>
+<article>
+  <h1>Hond redt toerist uit gracht</h1>
+</article>
+```
+
+Wel:
+
+```html
+<h1 class="accessible-but-not-visible">Laatste nieuws</h1>
+<article>
+  <h2>Peilingen: geen meerderheid voor huidige coalitie</h2>
+</article>
+<article>
+  <h2>Hond redt toerist uit gracht</h2>
+</article>
+```
+
+Oude versies van webstandaarden ontwikkelden een manier om pagina's met meerdere `h1` elementen wel mogelijk te maken. Het is uiteindelijk [niet gelukt](https://github.com/whatwg/html/pull/7829) een goede oplossing te maken die browsermakers hebben uitgewerkt. Baseer je aanpak niet optimistische [oude artikelen](https://www.smashingmagazine.com/2011/08/html5-and-the-document-outlining-algorithm/), want meerdere `h1` elementen gebruiken is uiteindelijk toch niet toegankelijk.
+
+#### Tijdelijk de pagina afschermen met andere belangrijke tekst
+
+Op interactieve pagina's kun je een dialoog tonen en de rest van de pagina tijdelijk afschermen. Op dat moment heeft de dialoog de enige en de belangrijkste tekst, en moet een `h1` gebruikt worden om de dialoog te beschrijven. Je mag dan niet tijdelijk twee `h1` elementen hebben.
+
+Niet:
+
+```html
+<article>
+  <h1>Hond redt toerist uit gracht</h1>
+</article>
+<dialog>
+  <h1>Deel dit artikel</h1>
+</dialog>
+```
+
+Je kunt tijdelijk de andere `h1` samen met de rest van de pagina verbergen voor onder andere screen readers door `aria-hidden="true"` te gebruiken, dan tellen koppen binnen dat element niet meer mee. Lees voor een volledig voorbeeld verder in de pagina over het dialoog-component.
+
+Wel:
+
+```html
+<article aria-hidden="true">
+  <h1>Hond redt toerist uit gracht</h1>
+</article>
+<dialog>
+  <h1>Deel dit artikel</h1>
+</dialog>
+```
+
+## Links
+
+- [MDN: `<h1>`–`<h6>`: The HTML Section Heading elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
+- [MDN: `<hgroup>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup)
+
+### Relevante WCAG regels
+
+- [WCAG 1.4.3](https://www.w3.org/TR/WCAG21/#contrast-minimum)
+- [WCAG 3.1.2](https://www.w3.org/TR/WCAG21/#language-of-parts)
