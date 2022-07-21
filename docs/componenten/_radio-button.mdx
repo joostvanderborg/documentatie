@@ -1,0 +1,67 @@
+<!-- @license CC0-1.0 -->
+
+# Radio button
+
+Een goede radio button is moeilijker te maken dan veel mensen denken, helaas gaat het vaak fout. Het is belangrijk dat de radio button extra groot is om makkelijk aan te klikken, dat er tenminste twee soorten labels gekoppeld zijn (de groep en de optie), en dat je met een toetsenbord kan kiezen voor een andere optie. Als je maar weet waar je op moet letten, dan is het niet zo moeilijk.
+
+## Design
+
+Gebruik een ronde vorm voor de radio button, dat is heel herkenbaar. Maak geen vierkante checkbox, het is verwarrend als een radio button lijkt op een checkbox.
+
+## Hoe het niet moet
+
+### Te klein oppervlakte om te klikken
+
+De _radio button_ van browsers is vaak kleiner dan 44×44px, volgens WCAG 2.1 is dat een toegankelijke afmeting voor een kleine knop. Een gekoppeld `<label>` element helpt om het klikbare oppervlakte groter te maken. Deze techniek werkt zelfs goed als geen extra CSS geladen is.
+
+### Geen koppeling met label van groep met opties
+
+Hulpmiddelen voor toegankelijkheid kunnen de gebruiker laten weten waar een radio button voor is, wanneer de radio button focus heeft. Alleen het label "Ja" of "Nee" is niet voldoende om het formulier te begrijpen. Tekst en uitleg in een formulier plaatsen is niet goed toegankelijk, als je met het toetsenbord alleen via de formuliervelden gaat. Koppen en alinea's worden vaak niet voorgelezen, tenzij ze gekoppeld zijn met bijvoorbeeld `aria-labelledby`.
+
+Niet:
+
+```html
+<h2>Heb je al eerder deze subsidie aangevraagd?</h2>
+<p>
+  <label><input type="radio" /> Ja</label>
+</p>
+<p>
+  <label><input type="radio" /> Nee</label>
+</p>
+```
+
+Als oplossing gebruik je in HTML het `fieldset` en `legend` element: de tekst in `legend` wordt de label van de radio button group, en die wordt dan genoemd als extra context.
+
+Wel:
+
+```html
+<fieldset>
+  <legend>Heb je al eerder deze subsidie aangevraagd?</legend>
+  <p>
+    <label><input type="radio" /> Ja</label>
+  </p>
+  <p>
+    <label><input type="radio" /> Nee</label>
+  </p>
+</fieldset>
+```
+
+Ook `role="radiogroup"` met `aria-labelledby` kan ook goed werken, maar dat is moeilijker in onderhoud door de ID-referentie.
+
+```html
+<section role="radiogroup" aria-labelledby="question">
+  <h2 id="question">Heb je al eerder deze subsidie aangevraagd?</h2>
+  <p>
+    <label><input type="radio" /> Ja</label>
+  </p>
+  <p>
+    <label><input type="radio" /> Nee</label>
+  </p>
+</section>
+```
+
+## Links
+
+### Relevante WCAG regels
+
+- [WCAG 2.1, 2.5.5 Target Size](https://www.w3.org/TR/WCAG21/#target-size)
