@@ -1245,9 +1245,9 @@ export const components: DesignSystemComponent[] = [
     backlog: 'https://github.com/nl-design-system/backlog/issues/119',
   },
   {
-    id: 'label',
+    id: 'form-label',
     name: 'Label',
-    aliases: ['form-label'],
+    aliases: ['label'],
     state: COMPONENT_STATES.COMMUNITY,
     communityDocs: [],
     implementations: [
