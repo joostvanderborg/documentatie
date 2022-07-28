@@ -8,6 +8,36 @@ Sommige gebruikers gebruiken het toetsenbord om telkens met één druk op de kno
 
 Sommige gebruikers gebruiken een lijst van alle links op een pagina, en kiezen een link uit op basis van de link-tekst. Deze gebruikers bekijken niet de hele pagina, en zien niet altijd de link in de context van de omliggende tekst. Daarom is het belangrijk dat de link-tekst op zichzelf duidelijk maakt welke pagina je opent. Om de juiste link te kunnen kiezen, is het ook belangrijk dat niet dezelfde link-tekst wordt gebruikt voor verschillende links. Gebruik dus niet "Lees meer" als link-tekst, die tekst is meestal niet uniek op een pagina en is onduidelijk zonder context.
 
+## Varianten
+
+Deze pagina gaat met name over links in de lopende tekst.
+
+Een aantal varianten zijn elders beschreven:
+
+- link van hoofdnavigatie
+- links die eruit zien als button
+- skip link
+
+## Design
+
+### Onderstreep de link
+
+Links zijn het meest herkenbaar als je de tekst van de link onderstreept, want dat is gebruikelijk sinds het begin van het web. Gebruik een kleur met voldoende contrast voor de streep, zodat iedereen die de tekst kan zien ook de streep kan zien. De kleur van de streep kan minder contrast hebben als de streep dikker is.
+
+Een streep die door de letters gaat maakt de tekst minder leesbaar. Gebruikers met dyslexie kunnen woorden beter herkennen als het woordbeeld niet wordt aangetast. Maak het woordbeeld van links rustiger met de volgende twee CSS properties. Je kunt met `text-decoration-skip-ink` in CSS de streep automatisch laten onderbreken, zodat je voorkomt dat woorden een beetje doorstreept worden. Met `text-underline-offset` kun je de afstand tussen de streep en de letters iets groter maken, zodat een onderbroken streep minder vaak nodig is.
+
+Links die staan op een herkenbare plek zoals de hoofdnavigatie, zijn vaak al herkenbaar als link wanneer ze niet onderstreept zijn. Je kunt extra duidelijk maken dat het een link is door de tekst alsnog onderstrepen als `hover` of `focus` effect, zodat een gebruiker zeker weet dat de browser mogelijkheden heeft zoals "Openen deze link in een nieuwe tab" of "Deel deze link".
+
+Heeft de link een icoon én tekst, onderstreep dan alleen de tekst.
+
+### `hover` en `focus`
+
+Wanneer een gebruiker met de muis over een link gaat (`hover`), of met het toetsenbord een link selecteert (`focus`), dan is het belangrijk dat er geen onvoorspelbare wijzigingen in de layout zijn.
+
+Gebruik voor `hover` en `focus` geen effecten waardoor de tekst van de link over meer regels wordt verdeeld, of waardoor de tekst na de link verschuift. Gebruik daarom geen andere `font-size` of `font-weight` als effect.
+
+Gebruik voor `hover` en `focus` geen effect waardoor de positie van de link verschuift, waardoor het moeilijk wordt de link aan te klikken.
+
 ## Hoe het niet moet
 
 ### Geen zichtbaar verschil tussen hover en focus state
