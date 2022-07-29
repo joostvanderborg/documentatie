@@ -26,7 +26,7 @@ Kleuren zijn een belangrijk onderdeel van het visueel ontwerp. Niet iedereen kan
 
 Soms veranderen kleuren om de status van de component duidelijk te maken (bijvoorbeeld `disabled` of `invalid`): verander dan niet alleen de kleur, maar kies ook bijvoorbeeld een donkerdere of lichtere kleur, of maak de lijnen en tekst dikker.
 
-**Sommige gebruikers zien dingen niet als tussen twee tinten te weinig contrast is.** Je moet in veel situaties op contrast letten, misschien vaker dan je denkt! Contrast tussen de kleur van tekst of iconen en de achtergrondkleur is belangrijk. Ook is contrast tussen _borders_ en _separators_ en de achtergrond belangrijk: als de _border_ niet zichtbaar is, dan is soms de hele component niet zichtbaar. Met kleur duidelijk maken dat een element focus heeft werkt alleen goed wanneer er voldoende contrast is tussen de twee kleurvarianten.
+**Sommige gebruikers zien dingen niet als tussen twee tinten te weinig contrast is.** Je moet in veel situaties op contrast letten, misschien vaker dan je denkt! Contrast tussen de kleur van tekst of iconen en de achtergrondkleur is belangrijk. Ook is contrast tussen _borders_ en _separators_ en de achtergrond belangrijk: als de _border_ niet zichtbaar is, dan is soms de hele component niet zichtbaar. [WCAG 1.4.11](https://www.w3.org/TR/WCAG21/#visual-presentation) zegt dat je daar een 3:1 contrast of beter moet gebruiken. Met kleur duidelijk maken dat een element focus heeft werkt alleen goed wanneer er voldoende contrast is tussen de twee kleurvarianten.
 
 Er bestaan diverse hulpmiddelen om kleurverschillen te meten, zodat je de combinaties kan testen op voldoende contrast. Bijvoorbeeld [contrast-ratio.com](https://contrast-ratio.com) van Lea Verou.
 
