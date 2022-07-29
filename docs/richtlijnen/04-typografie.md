@@ -16,15 +16,12 @@ keywords:
 
 ## Verschillen in welk lettertype gebruikers zien
 
-**Sommige gebruikers kiezen om alle tekst op hun scherm vet te maken.**
-
-**Sommige gebruikers lezen de vertaalde tekst in mogelijk Grieks, Cyrillisch, Arabisch of Aziatisch schrift.**
-
-**Sommige gebruikers lezen de tekst met extra grote letters.**
-
-**Sommige gebruikers lezen de tekst met extra grote regelafstand.**
-
-**Sommige gebruikers lezen de tekst zonder web font, met een eigen lettertype.**
+- Sommige gebruikers kiezen om alle tekst op hun scherm vet te maken.
+- Sommige gebruikers lezen een automatische vertaling van de tekst, in bijvoorbeeld Grieks, Cyrillisch, Arabisch of Aziatisch schrift.
+- Sommige gebruikers lezen de tekst met extra grote letters.
+- Sommige gebruikers lezen de tekst met extra grote regelafstand.
+- Sommige gebruikers lezen de tekst zonder een gedownload lettertype te gebruiken.
+- Sommige gebruikers lezen de tekst met een eigen lettertype.
 
 ## Vetgedrukt, ofwel `bold`
 
@@ -49,7 +46,41 @@ h3 {
 
 ## Cursief, ofwel `italic`
 
+## Letter spacing
+
+## Line height
+
+Stel met `line-height` voldoende afstand tussen tekstregels, dit verbetert de leesbaarheid. Gebruik het liefst een `line-height` tussen `1.5` en `2.0`. Standaard gebruiken browsers circa `1.2`, maar `1.5` is voor veel gebruikers beter leesbaar. Voor WCAG 1.4.8 is het ook belangrijk om `1.5` of groter aan te bieden. Groter dan `2.0` wordt minder leesbaar.
+
+- [WCAG 1.4.8](https://www.w3.org/TR/WCAG21/#visual-presentation)
+
 ## Hoe het niet moet
+
+### Anti-aliasing aanpassen
+
+Gebruikers hebben zeer uiteenlopende types beeldschermen, browsers en besturingssystemen. Hoe letters op jouw scherm worden getoond, is anders dan bij veel anderen. Als jouw `font-smoothing` aanpassingen goed werken op jouw beeldscherm, heb je nog lang niet getest hoe de aanpassing bij veel anderen eruit ziet.
+
+Gebruik geen `font-smoothing` in CSS om bijvoorbeeld de dikte van de tekst te optimaliseren, vertrouw op de instellingen van de gebruiker en laat `font-smoothing: auto` het werk doen. Wanneer het nodig is om miniscule aanpassingen te doen aan, gebruik dan een modern lettertype dat als _variable font_ geleverd wordt.
+
+Alleen als je een _pixel font_ gebruikt mag je daar `font-smoothing: none` gebruiken.
+
+Niet:
+
+```css
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+```
+
+Wel: verwijder alle code om `font-smoothing` aan te passen. Zit de code in een externe library waar je niet makkelijk enkele regels kunt verwijderen, dan kun je misschien CSS toevoegen om het ongedaan te maaken:
+
+```css
+:root {
+  -webkit-font-smoothing: auto !important;
+  -moz-osx-font-smoothing: auto !important;
+}
+```
 
 ### Eigen `font-family` naam voor bold of italic variant
 
@@ -105,8 +136,9 @@ dt {
 }
 ```
 
-Op deze manier loop je niet het risico dat gebruikers minder leesbare teksten zien door _faux italic_ of _faux bold_ letters, en heb je bovendien duidelijkere code.
+Op deze manier loop je niet het risico dat gebruikers minder leesbare teksten zien door _faux italic_ of _faux bold_ letters, of nog erger: een vet lettertype dat met _faux bold_ nog extra vet wordt. Bovendien heb je zo duidelijkere code.
 
 ## Links
 
+- [Say No to Faux Bold, by Alan Stearns](https://alistapart.com/article/say-no-to-faux-bold/)
 - [On Link Underlines, by Adrian Roselli](https://adrianroselli.com/2016/06/on-link-underlines.html)
