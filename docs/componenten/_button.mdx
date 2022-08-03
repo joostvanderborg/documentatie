@@ -1,0 +1,96 @@
+<!-- @license CC0-1.0 -->
+
+# Button
+
+## Design
+
+Maak elke button 44×44px of groter ([WCAG 2.5.5](https://www.w3.org/TR/WCAG21/#target-size)).
+
+## Gebruik je een button of link?
+
+Sommige ontwerpen hebben een button om naar een andere pagina te gaan. Sommige ontwerpen hebben link in een formulier om naar de vorige pagina te gaan, terwijl de gegevens wel tussentijds verstuurd en opgeslagen worden. Het is belangrijk dat je het goede HTML-element gebruikt dat past bij de actie, in plaats van het HTML-element kiest dat past bij het ontwerp.
+
+Om deze patronen te gebruiken zijn er vier componenten nodig:
+
+- link
+- link die eruit ziet als button
+- button
+- button die eruit ziet als link
+
+Gebruik alleen een `<a>` element wanneer er geen gevolgen zijn. Gebruik een `<button>` element als
+
+Enkele voorbeelden waar je een link gebruikt:
+
+- een _call to action_ om te registreren: een link.
+- een knop om naar het loginformulier te gaan: een link
+- dezelfde pagina in een andere taal bekijken: een link.
+
+Enkele voorbeelden waar je een button gebruikt:
+
+- Uitloggen: button. Log niet uit met een link! Je navigatie moet het ondersteunen om zowel links als button dezelfde stijl te geven.
+- de voorkeurstaal aanpassen en dezelfde pagina in een andere taal bekijken: een button.
+
+## Hoe het niet moet
+
+### Geen koppeling met uitleg over button
+
+Niet:
+
+```html
+<p>
+  <label for="upload">Bijlage:</label>
+  <input type="file" id="upload" />
+</p>
+<p>Je mag een JPG of een PDF uploaden.</p>
+```
+
+Wel:
+
+```html
+<p>
+  <label for="upload">Bijlage:</label>
+  <input type="file" id="upload" aria-describedby="upload-description" />
+</p>
+<p id="upload-description">Je mag een JPG of een PDF uploaden.</p>
+```
+
+---
+
+Niet:
+
+```html
+<p>
+  <button type="submit">Verzenden</button>
+</p>
+<p>Door het formulier te verzenden ga je akkoord met de algemene voorwaarden.</p>
+```
+
+Wel:
+
+```html
+<p>
+  <button type="submit" aria-describedby="submit-description">Verzenden</button>
+</p>
+<p id="submit-description">Door het formulier te verzenden ga je akkoord met de algemene voorwaarden.</p>
+```
+
+### Geen koppeling met foutmelding bij een button
+
+Niet:
+
+```html
+<p>
+  <button type="submit">Opslaan</button>
+</p>
+<p class="error">Je bent uitgelogd. Log opnieuw in om je wijzigingen op te slaan.</p>
+```
+
+Wel:
+
+```html
+<p>
+  <label for="upload">Bijlage:</label>
+  <input type="file" id="upload" aria-describedby="upload-description" />
+</p>
+<p id="upload-description" class="error">Je mag een JPG of een PDF uploaden.</p>
+```
