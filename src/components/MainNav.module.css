@@ -16,7 +16,7 @@
   --ifm-navbar-item-padding-horizontal: 0;
   font-weight: bold;
   border-bottom: 3px solid transparent;
-  font-family: "montserrat";
+  font-family: var(--ifm-font-family-base);
   font-size: 16px;
 }
 

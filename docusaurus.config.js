@@ -28,7 +28,11 @@ const config = {
           editUrl: 'https://github.com/nl-design-system/documentatie/tree/main/',
         },
         theme: {
-          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/fonts.css')],
+          customCss: [
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/fonts.css'),
+            require.resolve('./src/css/fonts.js'),
+          ],
         },
       },
     ],
