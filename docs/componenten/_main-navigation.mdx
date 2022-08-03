@@ -1,0 +1,95 @@
+<!-- @license CC0-1.0 -->
+
+# Main navigation
+
+## HTML
+
+Tips om je HTML op te bouwen:
+
+- plaats de component in een `<nav>` element zodat de links in een _landmark region_ staan
+- gebruik een `id`-attribuut zodat de _skip link_ naar de navigatie kan verwijzen
+- maak met `<nav aria-label="Hoofdmenu">` duidelijk dat het de hoofdnavigatie, wanneer je meerdere `<nav>` elementen hebt
+- gebruik `<a aria-current="location">` om de huidige pagina te markeren
+- gebruik extra _microdata_ markup als je wilt dat zoekmachines de breadcrumbs kunnen tonen in de zoekresultaten: [_Breadcrumb_ op Google Search Central](https://developers.google.com/search/docs/data-types/breadcrumb)
+
+## Hoe het niet moet
+
+### Huidige pagina niet ingesteld
+
+Het is belangrijk alle gebruikers kunnen opmerken welke link verwijst naar de pagina die nu al geopend is, zodat je niet onbedoeld opnieuw begint met het laden van de pagina waar je al bent. Een class name en de link vet maken is niet voldoende, gebruik ook het `aria-current` attribuut op het `<a>` HTML-element.
+
+### Geen onderscheid tussen navigatie landmarks
+
+Wanneer je website op sommige pagina's meerdere `nav` elementen heeft, dan is het handig dat ze een consistent label hebben. Gebruik het label consistent, dus ook op pagina's waar maar één navigatie-niveau is zoals wellicht de homepage. ([WCAG 3.2.4](https://www.w3.org/TR/WCAG21/#consistent-identification)).
+
+Niet:
+
+```html
+<nav class="main">…</nav>
+<nav class="sidebar">…</nav>
+<nav class="breadcrumbs">…</nav>
+```
+
+Wel:
+
+```html
+<nav aria-label="Hoofdnavigatie" class="main">…</nav>
+<nav aria-label="Zijmenu" class="sidebar">…</nav>
+<nav aria-label="Kruimelpad" class="breadcrumbs">…</nav>
+```
+
+Wanneer je website nooit méér dan één navigatie _landmark_ heeft en de hoofdnavigatie is de enige `<nav>`, dan is het beter om geen label te gebruiken. Dan is het zonder label duidelijk genoeg dat het om de hoofdnavigatie gaat, en scheelt het screen reader gebruikers op elke pagina een beetje tijd.
+
+### Navigatie niet vindbaar als _landmark_
+
+Gebruik het `<nav>` HTML-element als basis van je navigatie. Sommige gebruikers kunnen door de _navigation landmark_ heel veel sneller de navigatielinks vinden, waardoor het niet onnodig veel tijd kost om je website te gebruiken.
+
+Niet:
+
+```html
+<div>
+  <a href="/">Home</a>
+</div>
+```
+
+Wel:
+
+```html
+<nav>
+  <a href="/">Home</a>
+</nav>
+```
+
+### Navigatie in de verkeerde _landmark_
+
+Plaats het `<nav>` HTML-element niet binnen de _main page content_, ofwel het `<main>` HTML-element.
+
+Niet:
+
+```html
+<main>
+  <nav class="main-nav">
+    <a href="/">Home</a> /
+    <a href="/about" aria-current="page">About</a>
+  </nav>
+  <h1>About</h1>
+</main>
+```
+
+Wel:
+
+```html
+<nav class="main-nav">
+  <a href="/">Home</a> /
+  <a href="/about" aria-current="page">About</a>
+</nav>
+<main>
+  <h1>About</h1>
+</main>
+```
+
+## Links
+
+- [WCAG 2.4.8](https://www.w3.org/TR/WCAG21/#location)
+- [WCAG 2.4.9](https://www.w3.org/TR/WCAG21/#link-purpose-link-only)
+- [WCAG 3.2.3](https://www.w3.org/TR/WCAG21/#consistent-navigation)
