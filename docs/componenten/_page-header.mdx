@@ -1,0 +1,31 @@
+<!-- @license CC0-1.0 -->
+
+# Page header
+
+De page header bevat vaak deze andere componenten:
+
+- skip links
+- logo
+- _main navigation_
+- _breadcrumb navigation_
+- zoekformulier
+
+## HTML
+
+Gebruik een `<header>` HTML-element voor de _page header component_. Plaats de `<header>` voor de `<main>`, niet in de `<main>`. Bijvoorbeeld:
+
+```html
+<body>
+  <header>
+    <div class="skip-links">…</div>
+    <div class="logo">…</div>
+    <nav aria-label="Hoofdmenu">…</nav>
+    <form role="search">…</form>
+    <nav aria-label="Kruimelpad">…</nav>
+  </header>
+  <main>
+    <h1>Contact</h1>
+    …
+  </main>
+</body>
+```
