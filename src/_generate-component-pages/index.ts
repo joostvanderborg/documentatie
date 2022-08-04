@@ -1,4 +1,4 @@
-import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index/src';
+import { ComponentImplementation, componentIndex } from '@nl-design-system/component-index';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -15,8 +15,8 @@ import {
 
 const DOCS_PATH = '../../docs/componenten';
 
-const ensureDir = (directoryName) => {
-  const dirPath = path.join(__dirname, DOCS_PATH, directoryName);
+const ensureDir = (directoryName: string) => {
+  const dirPath = path.join(import.meta.url, DOCS_PATH, directoryName);
   if (!fs.existsSync(dirPath)) {
     try {
       fs.mkdirSync(dirPath, { recursive: true });
@@ -39,7 +39,7 @@ const ensureDir = (directoryName) => {
 componentIndex.forEach(({ state, id, name, aliases, implementations, backlog }) => {
   const dir = ensureDir(state);
   const fileName = `${dir}/${id}.mdx`;
-  const customDocsPath = path.join(__dirname, DOCS_PATH, `_${id}.mdx`);
+  const customDocsPath = path.join(import.meta.url, DOCS_PATH, `_${id}.mdx`);
 
   try {
     fs.writeFileSync(fileName, componentPage({ name, state }));

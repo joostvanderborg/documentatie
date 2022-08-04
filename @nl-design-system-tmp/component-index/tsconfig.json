@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
+    "outDir": "dist",
     "baseUrl": "./",
-    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": false,
+    "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "sourceMap": true,
-    "declaration": false,
+    "sourceMap": false,
+    "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ESNext",
-    "module": "ESNext",
+    "target": "ES2015",
+    "module": "es2020",
     "lib": ["es2020", "dom"]
   },
-  "include": ["node_modules/**/*", "src/**/*"]
+  "include": ["src/**/*.ts"],
 }

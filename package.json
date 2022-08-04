@@ -15,7 +15,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "write-component-pages": "ts-node --project ./tsconfig.commonjs.json src/_generate-component-pages",
+    "write-component-pages": "ts-node --esm --experimental-specifier-resolution=node --project ./tsconfig.commonjs.json src/_generate-component-pages/index",
     "typecheck": "tsc",
     "lint": "npm-run-all --continue-on-error lint:**",
     "lint:package-lock": "npm ls",
@@ -40,7 +40,7 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^2.0.1",
     "@docusaurus/types": "^2.0.1",
-    "@nl-design-system/component-index": "^1.0.0-alpha.3",
+    "@nl-design-system/component-index": "1.0.0-alpha.4",
     "@tsconfig/docusaurus": "^1.0.6",
     "@types/node": "^17.0.45",
     "npm-check-updates": "^16.0.5",
@@ -61,5 +61,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "type": "module"
 }

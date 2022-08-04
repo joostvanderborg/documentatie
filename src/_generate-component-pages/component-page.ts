@@ -1,4 +1,4 @@
-import { COMPONENT_STATES, COMPONENT_TYPES, ComponentImplementation } from '@nl-design-system/component-index/src';
+import { ComponentImplementation, COMPONENT_STATES, COMPONENT_TYPES } from '@nl-design-system/component-index';
 
 export const getStateDescription = ({ state }) => {
   let description = '';
@@ -31,7 +31,7 @@ Dit component heeft de "${state}" status: ${description}
 
 export const getAliasOverview = ({ name, aliases }) => {
   if (!aliases.length) {
-    return;
+    return '';
   }
 
   const lastAlias = aliases.pop();
