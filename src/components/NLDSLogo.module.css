@@ -1,0 +1,32 @@
+.nlds-logo {
+  color: var(--nlds-logo-color);
+  font-family: var(--utrecht-heading-font-family);
+  font-weight: var(--utrecht-heading-font-weight);
+  font-size: var(--nlds-logo-font-size);
+  display: flex;
+  gap: var(--nlds-logo-gap);
+  align-items: center;
+}
+
+.nlds-logo:hover {
+  text-decoration: none;
+  color: var(--nlds-logo-color);
+}
+
+.nlds-logo__icon {
+  height: var(--nlds-logo-icon-size);
+  width: var(--nlds-logo-icon-size);
+
+  --icon-background-color: #1a84b6;
+  --icon-highlight-color: #1a92c0;
+  --icon-connector-color: #60c3db;
+  --icon-chevron-color: #a7dee6;
+  --icon-shadow-color: #156b93;
+  --icon-document-background-color: #ffffff;
+  --icon-document-content-color: #d8d7d7;
+  --icon-component-background-color: #74295f;
+  --icon-component-dark-background-color: #5e204d;
+  --icon-component-light-background-color: #b765a5;
+  --icon-radar-background-color: #efefef;
+  --icon-radar-dark-background-color: #d8d7d7;
+}
