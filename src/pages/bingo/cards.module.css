@@ -1,5 +1,5 @@
 .logo {
-  color: white;
+  color: #00303d;
   margin: 0;
   display: flex;
   gap: 0.5ch;
@@ -16,7 +16,6 @@
   /* break-after: page; */
   size: a4 portrait;
   position: relative;
-  background-color: #74295f;
   height: 1123px;
   padding-inline: 20px;
 }
@@ -36,7 +35,7 @@
   display: grid;
   grid-template-columns: repeat(var(--bingo-card-grid-columns, 5), 1fr);
   width: 750px;
-  height: 750px;
+  height: auto;
   background-color: white;
 }
 
@@ -54,15 +53,16 @@
   text-align: center;
   line-height: 4ch;
   margin-block-start: 1ch;
-  margin-block-end: 2ch;
+  margin-block-end: 1ch;
 }
 
 .bingo-card__cell-label {
   text-align: center;
+  font-size: 24px;
 }
 
 .url {
-  color: white;
+  color: #00303d;
   display: flex;
   align-items: baseline;
   justify-content: end;
@@ -71,5 +71,5 @@
 }
 
 .url__qr {
-  width: 50px;
+  width: 100px;
 }

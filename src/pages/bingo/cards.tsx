@@ -59,7 +59,7 @@ const BingoCard = ({ issues, columns, rows }: BingoCardProps) => {
 };
 
 export const BingoCards = () => {
-  const players = 20;
+  const players = 22;
   const columns = 3;
   const rows = 3;
 
