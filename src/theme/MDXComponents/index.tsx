@@ -18,6 +18,7 @@ import {
   OrderedList,
   OrderedListItem,
   Paragraph,
+  Separator,
   Strong,
   UnorderedList,
   UnorderedListItem,
@@ -50,6 +51,7 @@ const MDXComponents: MDXComponentsObject = {
   h4: Heading4,
   h5: Heading5,
   h6: Heading6,
+  hr: Separator,
   p: Paragraph,
   ol: ({ children }) => (
     <OrderedList>
